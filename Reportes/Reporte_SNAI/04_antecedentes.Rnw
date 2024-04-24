@@ -1,0 +1,7 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Antecedentes}
+\label{chap_Intro}
+
+Con fecha 04 de marzo del 2022, se efectúa la mesa de trabajo Institucional donde se abordan temas relacionados a la necesidad de contar con un Censo Socio Económico de los Recicladores Base, el mismo se define que estará a cargo del Ministerio de Inclusión Económica y Social (MIESS), quien será el responsable de realizar el traspaso de la Información al Instituto Ecuatoriano de Seguridad Social para desarrolar el estudio de factibilidad para la creación de un paquete prestacional diferenciado para este segmento de la población, cumpliendo con lo que se determina legal vigente. \\
+
+Con fecha 18 de marzo del 2022, se realiza el Censo Socio Económico de los Recicladores Base por parte del Ministerio de Inclusión Económica y Social (MIESS), es necesario continuar con la etapa de factibilidad y propuesta en la creación de paquete prestacional para los recicladores de base por parte del Instituto Ecuatoriano de Seguridad Social y sus unidades de gestión interna, en este sentido y en función de sus atribuciones y responsabiliddes, sírvase encontrar adjunto en medio magnético (CD) la base de datos del mencionado Censo, con sus respectivas credenciales de acceso.

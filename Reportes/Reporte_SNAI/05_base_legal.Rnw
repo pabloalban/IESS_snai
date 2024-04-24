@@ -1,0 +1,37 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Base Legal}
+\label{chap_legal}
+
+%---------------------------------------------------------------------------------------------------
+
+
+\section{ Sobre elaboración de Estudios Actuariales y la creación de nuevas prestaciones}
+
+El artículo 369 de la Constitución de la República del Ecuador manifiesta: "El seguro universal obligatorio cubrirá las contingencias de enfermedad, maternidad, paternidad, riesgos de trabajo, cesantía, desempleo, vejez, invalidez, discapacidad, muerte y aquellas que defina la ley. Las prestaciones de salud de las contingencias de enfermedad y maternidad se brindarán a través de la red pública integral de salud.\\
+El artículo 233 de la Ley de Seguridad social del Ecuador indica: "No se creará prestación alguna ni se mejorarán las existentes a
+cargo del Seguro Social Obligatorio aplicado por el IESS, si no se encontraren debidamente financiadas y respaldadas en
+los resultados de estudios actuariales que demuestren su solvencia y sostenibilidad."
+
+\section{ Responsabilidades de DAIE}
+
+El artículo 45 de la Ley de Seguridad social del Ecuador establece:  La Dirección Actuarial es órgano de asesoría técnica del IESS,
+subordinado al Consejo Directivo. Tiene a su cargo la preparación de los balances actuariales de cada uno de los regímenes de protección del Seguro General Obligatorio; la elaboración de los estudios técnicos y los informes periódicos sobre la situación de dichos regímenes y sus proyecciones; la evaluación de la cobertura poblacional, el perfil epidemiológico, los índices de
+siniestralidad de cada riesgo protegido, y del equilibrio financiero de los seguros sociales aplicados por el IESS; la preparación sistemática, periódica y oportuna de la memoria estadística del IESS, y los demás que ordene el Consejo Directivo."\\
+El punto 2.3 del artículo 10 de la Resolución No. C.D. 535 establece la misión: "Preparar los balances actuariales de cada uno de los regímenes de protección del Seguro General Obligatorio, la elaboración de los estudios técnicos y los informes periódicos sobre la situación de dichos regímenes y sus proyecciones para mantener el equilibrio financiero de los seguros administrados por el IESS; realizar investigaciones y estudios en el campo de la seguridad social; y, preparar de manera sistemática, periódica y oportuna la memoria estadística del IESS en los términos establecidos en la Ley."
+\\
+Las atribuciones y responsabilidades son las siguientes: "Desarrollar y revisar estudios e informes técnicos sobre la situación financiera actuarial de los regímenes de aseguramiento para la presentación de las contingencias del seguro universal obligatorio de los afiliados del IESS; y, para la prestación de contingencias del seguro universal obligatorio de los afiliados al IESS; y, para la prestación de contingencias del régimen especial establecido para el Seguro Social Campesino,y requerido por el Consejo Directivo y la Dirección General.
+
+\section{Ley Orgánica de Economía Circular Inclusiva}
+
+La disposición general única de la Ley Orgánica de Economía Circular Inclusiva, de promulgación en el Cuarto Suplemento del Regisro Oficial 488, de fecha 6 de julio de 2021, manifiesta:\\
+\textit{"Única.- A fin de garantizar el acceso universal a la seguridad social, el Instituto Ecuatoriano de Seguridad creará la categoría de afiliación denominada "Trabajador Autónomo Reciclador de Base", cuya base presuntiva de aportación será calculada en función de la información socio económica del censo de recicladores de base que realice el \bfseries{Ministerior de Inclusión Económica y Social}, acorde a lo dispuesto en la Resolución Nro. C.D. 535, del Reglamento Orgánico Funcional del Instituto Ecuatoriano de Seguridad Social."}
+
+\section{Misión de la Dirección Nacional de Afiliación y Cobertura}
+
+La Dirección Nacional de Afiliación y Cobertura, en cumplimiento con la Resolución Nro. C.D. 535, del Reglamento Orgánico Funcional del Instituto Ecuatoriano de Seguridad Social, dispone dentro de su misión:\\
+\textit{"Administrar, dirigir y gestionar los procesos de afiliación y cobertura alineada a la caracterización de la población afiliable, así como la inspección y fiscalización derivadas de las mismas, a fin de brindar seguridad social a los afiliados, empleadores y potenciales beneficiarios."}
+
+
+
+
+

@@ -1,0 +1,51 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Nota técnica}
+\label{chp_nota_tecnica}
+
+En cumplimento del literal L del artículo 14 del CAPÍTULO II: ``REQUISITOS TÉCNICOS PARA LA ELABORACIÓN, PRESENTACIÓN, APROBACIÓN Y REVISIÓN DE LOS ESTUDIOS ACTUARIALES DE LAS ENTIDADES DE SEGURIDAD SOCIAL'' del TITULO IV: ``DE LA ACTIVIDAD ACTUARIAL'' del LIBRO DOS, el cual establece la evolución y tendencia financiera de las ``\textit{i. Base de datos: Descripción de la información contenida en las bases de datos que sirvieron para la elaboración del estudio;}'', ``\textit{ii. Fuentes de información;}'' y  ``\textit{Metodología utilizada en la obtención de hipótesis, tablas biométricas, modelo, en el caso de que no se haya descrito en las secciones anteriores}''.
+
+%---------------------------------------------------------------------------------------------------
+\section{Base de datos}
+\label{chp_nota_tecnica:Base de datos}
+
+ Descripción de la información contenida en las bases de datos que sirvieron para la elaboración del estudio se encuentra en el capítulo \ref{chp_demog}, donde se puede encontrar un análisis estadístico descriptivo de las bases de datos de prestaciones de este Seguro y sus cotizantes y cuales sirvieron como entradas de los modelos demográficos y actuariales presentados.
+ 
+\section{Fuentes de información}
+\label{chp_nota_tecnica: Fuentes de información}
+
+La Dirección Actuarial, de Investigación y Estadística utilizo las bases de datos de planillas de la Dirección Nacional de Afiliación y Cobertura del IESS y las bases de datos de prestaciones de cada uno de los seguros para elaborar los modelos demográficos y actuariales presentados.
+
+Para la proyección de las hipótesis macroeconómicas presentadas en el capítulo \ref{chp_contexto},  se utilizó los datos de desempleo, inflación e IPC publicadas en la página del Instituto Nacional de Estadística y Censos y las tasas de intereses referenciales de la página web del Banco Central del Ecuador.
+
+\section{Metodología}
+
+La metodología utilizada en la obtención de hipótesis se encuentra detallado en la sección \ref{chp_contexto:modelo_macro}. Las tablas de mortalidad se presentará un informe adicional dedicado al tema. Y, por último, la metodología del modelo demográfico y actuarial se presentó en el capítulo \ref{chp_modelo}.
+
+\label{chp_nota_tecnica: Fuentes de información}
+
+%---------------------------------------------------------------------------------------------------
+\chapter{Anexos}
+\label{chp_anexos}
+
+En cumplimento del literal M del artículo 14 del CAPÍTULO II: ``REQUISITOS TÉCNICOS PARA LA ELABORACIÓN, PRESENTACIÓN, APROBACIÓN Y REVISIÓN DE LOS ESTUDIOS ACTUARIALES DE LAS ENTIDADES DE SEGURIDAD SOCIAL'' del TITULO IV: ``DE LA ACTIVIDAD ACTUARIAL'' del LIBRO DOS, el cual establece la evolución y tendencia financiera de las ``\textit{Tablas biométricas utilizadas;}'', ``\textit{ii. Base de datos;}'', ``\textit{iii. Códigos de programación;}'', ``\textit{iv. Estados financieros;}'' y,   ``\textit{Varios}''.
+
+\section{Tablas biométricas utilizadas}
+
+En el capítulo \ref{chp_riesgos} se encuentran las tablas de siniestralidad del Seguro y las tablas de mortalidad se presentará un informe adicional dedicado al tema.
+
+\section{Base de datos}
+
+Se adjunta al presente estudio un CD-ROM, el cual contiene una copia digital del presente estudio, debidamente firmado electrónicamente, y tablas de contingencia por edad, sexo y número de aportes de los salarios, aportaciones, beneficios, tablas de siniestralidad, y otras tablas que sirvieron de entradas para los modelos presentados en el estudio.
+
+\section{Códigos de programación}
+
+El código de programación que realiza los cálculos matemáticos y genera el presente informe consiste de 50 mil líneas de código en lenguaje de programación R y Latex y es propiedad intelectual del IESS.
+
+\section{Estados financieros}
+
+Los estados financieros de 2012 a 2020, elaborados por la Dirección Nacional Financiera y auditados por la Contraloría General del Estado,  se encuentran en el CD-ROM adjunto a este estudio.
+
+
+
+
+

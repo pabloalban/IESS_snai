@@ -1,0 +1,1405 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Valuación actuarial del \Sexpr{REP_seg}}
+\label{chp_valuacionactu}
+
+Tomando en cuenta el modelo actuarial presentado en el capítulo \ref{chp_modelo} y las hipótesis
+actuariales definidas en el capítulo \ref{chp_hipotesis}, en esta sección se presentan los
+resultados que reflejan la situación actuarial y financiera del \Sexpr{REP_seg}, generados bajo
+diferentes escenarios de proyección. A partir de esos balances, en cada escenario se puede apreciar
+la situación actuarial y financiera del \Sexpr{REP_seg} de forma dinámica, para cada año desde la
+fecha de corte y hasta el horizonte de estudio ($T = \Sexpr{REP$hor}$ años).   
+
+Para el análisis se han definido tres (3) escenarios: 
+\begin{enumerate}[itemsep=1mm, topsep=5pt]
+\item \textbf{Escenario Legal:} Constituye el escenario establecido de acuerdo con la Ley y Resoluciones vigentes, aplicando parámetros
+financieros conservadores y realistas. En este escenario 
+se supone: tasa actuarial \Sexpr{REP$tasa_act_esc_1}\%, tasa de crecimiento salarial de \Sexpr{REP$tasa_sal_esc_1}\%
+y tasa de crecimiento de pensiones igual a \Sexpr{REP$tasa_pen_esc_1}\%. Además, supone que el aporte estatal
+promedio para los próximos años es igual a \Sexpr{REP$apo_est_esc_1}\% (el Estado alega que no existe base legal para su contribución del 40\% en las indemnizaciones por incapacidad permanente parcial y subsidios por incapacidad temporal) y toma en cuenta el cese del aporte del 2,76\% de los pensionistas.
+
+\item \textbf{Escenario Intermedio:} Constituye el escenario más probable, aplicando parámetros
+financieros conservadores y realistas, utilizados en el Escenario Legal; pero supone que el aporte estatal promedio para los próximos años es igual a \Sexpr{REP$apo_est_esc_2}\% ( porcentaje aporte del Estado en 2020 ).
+
+\item \textbf{Escenario Pesimista:} Constituye el escenario en el cual el Estado cesa su aporte del 40\% de las pensiones, aplicando parámetros
+financieros conservadores y realistas, en base a valores proyectados utilizados en el Escenario Legal.
+
+\end{enumerate}
+
+Los parámetros que definen cada escenario\footnote{Nota: La tasa de aportación de afiliados
+($\pi^{2}$) se define a continuación en el detalle de parámetros de cada escenario.} se presentan
+en la tabla \ref{tab:par_escenarios}.
+
+\noindent
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{lccc}
+\caption{Escenarios de análisis}\\
+\label{tab:par_escenarios} \\
+\toprule
+\multirow{3}{*}{Parámetros:} & 
+\multicolumn{1}{c}{Escenario 1} &
+\multicolumn{1}{c}{Escenario 2} &
+\multicolumn{1}{c}{Escenario 3}
+\\
+&
+\multicolumn{1}{c}{Legal} &
+\multicolumn{1}{c}{Intermedio} &
+\multicolumn{1}{c}{Pesimista}
+\\
+& 
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)}
+ \\
+\midrule
+\endfirsthead
+
+\toprule
+\multirow{3}{*}{Parámetros:} & 
+\multicolumn{1}{c}{Escenario 1} &
+\multicolumn{1}{c}{Escenario 2} &
+\multicolumn{1}{c}{Escenario 3}
+\\
+&
+\multicolumn{1}{c}{Legal} &
+\multicolumn{1}{c}{Intermedio} &
+\multicolumn{1}{c}{Pesimista}
+\\
+& 
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)}
+ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{2}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{Elaborado: \scriptsize DAIE}
+\endlastfoot
+
+\input{tablas/iess_tab_conf_escenarios.tex}
+
+\end{longtable}
+}
+
+%En todos los escenarios, 
+
+Se consideró la misma estructura actuarial del \Sexpr{REP_seg}, definida
+por un sistema de financiamiento de reparto con prima media general, un esquema de prestaciones de
+beneficio definido y un régimen demográfico en grupo abierto, acorde a lo expuesto en la sección
+\ref{chp_modelo:actu}. 
+
+También se consideró el fallo de la corte constitucional sobre el cese de los aportes del 2,76\%
+por parte de los pensionistas para financiar auxilio de funerales y décimas.
+.
+\clearpage
+
+% Escenario 1 --------------------------------------------------------------------------------------
+\section{Valuación actuarial bajo el escenario legal}
+\label{chp_valuacion:esc_legal}
+
+En este escenario se utilizan las siguientes hipótesis: tasa actuarial, \Sexpr{REP$tasa_act_esc_1}\%; tasa de crecimiento de los salarios, \Sexpr{REP$tasa_sal_esc_1}\%; y tasa de crecimiento del salario básico unificado \Sexpr{REP$tasa_sbu_esc_1}\%. Además, se establece que los gastos
+administrativos son igual al \Sexpr{REP$tasa_por_gas_esc_1}\% de la masa salarial.
+
+Este escenario considera las siguientes fuentes de financiamiento: la tasa de aportación de los
+afiliados activos igual a 0,38\% a partir del 2021, establecido en la \legalcite{ResIESS_CD515}; la tasa de aportación del estado igual a \Sexpr{REP$apo_est_esc_1}\%; y se consideró el fallo de la corte constitucional sobre el cese de los aportes del 2,76\% por parte de los pensionistas para financiar auxilio de funerales y décimas.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Balance actuarial para el escenario legal}
+\label{chp_valuacionactu:esc_1:balactu}
+
+La tabla \ref{tab:iess_bal_act_vap_escenario_1} presenta el balance actuarial para el año 2060 del
+escenario legal. El escenario legal registra un superávit igual a USD \Sexpr{REP$bal_act_esc_1}, en
+términos actuariales, en el año 2060, el cual se obtiene de la diferencia entre su activo actuarial
+(USD \Sexpr{REP$bal_sum_act_esc_1}) y su pasivo actuarial (USD \Sexpr{REP$bal_sum_pas_esc_1}), en valor
+presente. Por último, su prima suficiente alcanza el \Sexpr{REP$pri_med_niv_esc_1}\%.
+\begin{table}[H]
+\centering
+\caption{Balance actuarial en el escenario legal}
+\label{tab:iess_bal_act_vap_escenario_1}
+\caption*{Fecha de valuación: al \Sexpr{REP$fec_fin}}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{lr}
+\toprule
+Componente:	& Valor (USD) \\
+\midrule
+% el comando \csname es para evitar un error cuando el input comienza con \multicolumn
+ \csname @@input\endcsname tablas/iess_bal_act_vap_escenario_1.tex
+%\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{table}
+
+% Escenario 1 balance actuarial dinámico -----------------------------------------------------------
+La tabla \ref{tab:bal_act_tot_esc_1} y la figura \ref{graf:bal_vap_esc_1} presentan la evolución del
+balance actuarial dinámico para horizontes $T \in \{0,\ldots,40\}$. En la tabla
+\ref{tab:bal_ben_esc_1}, se observa el detalle de los beneficios por pago de prestaciones; en
+cambio, en la tabla \ref{tab:iess_bal_act_vap_escenario_1}, se presenta la reserva, $V_t$, del
+\Sexpr{REP_seg} para cada año hasta el año 2060. El gráfico \ref{graf:apo_ben_bal_din_esc_1} presenta la
+comparación entre los aportes (línea azul) y los beneficios (línea verde).
+\begin{figure}[H]
+\caption{Escenario legal: evolución del balance actuarial $V_T$}
+\label{graf:bal_vap_esc_1}
+\centering
+\includegraphics[scale=1]{graficos/iess_balance_vap_rv_escenario_1.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Escenario legal: aportes y beneficios del balance actuarial $V_T$}
+\label{graf:apo_ben_bal_din_esc_1}
+\centering
+\includegraphics[scale=1]{graficos/iess_apo_ben_bal_dinamico_escenario_1.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{L{1cm}R{1cm}*{6}{R{2.5cm}}}
+\caption{Escenario legal: balance actuarial dinámico}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$ y horizontes de proyección 
+$T \in \{0,\ldots,40\}$}
+\label{tab:bal_act_tot_esc_1} \\
+\toprule
+Año 
+& Horizonte 
+& Aportes
+& Aporte estatal
+& Beneficios
+& Gasto administrativo
+& Reserva inicial
+& Balance actuarial\\
+& $T$
+& $\sum\limits_{t=0}^T v^t A_t$ 
+& $\sum\limits_{t=0}^T v^t A^{est}_t$
+& $\sum\limits_{t=0}^T v^t B_t$ 
+& $\sum\limits_{t=0}^T v^t G_t$
+& $V_0$
+& $V_T$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Horizonte
+& Aportes
+& Aporte estatal
+& Beneficios
+& Gasto administrativo
+& Reserva inicial 
+& Balance actuarial\\
+& $T$
+& $\sum\limits_{t=0}^T v^t A_t$ 
+& $\sum\limits_{t=0}^T v^t A^{est}_t$
+& $\sum\limits_{t=0}^T v^t B_t$
+& $\sum\limits_{t=0}^T v^t G_t$
+& $V_0$
+& $V_T$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+\input{tablas/iess_balance_actuarial_escenario_1.tex}
+\end{longtable}
+}
+\end{landscape}
+
+% Escenario 1 tabla aportes dinámico ---------------------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}R{0.7cm}*{6}{R{2.5cm}}}
+\caption{Escenario legal: aportes balance dinámico}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$ y horizontes de proyección 
+$T \in \{0,\ldots,40\}$}
+\label{tab:bal_apo_esc_1}\\
+
+\toprule
+Año 
+& Horizonte 
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total
+& Pensionistas de montepío orfandad
+& Pensionistas de montepío viudedad 
+& Aporte estatal                
+& Aporte total \\
+& $t$       
+& $\sum\limits_{t=0}^T v^t A^2_t$ 
+& $\sum\limits_{t=0}^T v^t A^{12}_t$
+& $\sum\limits_{t=0}^T v^t A^{15}_t$
+& $\sum\limits_{t=0}^T v^t A^{16}_t$
+& $\sum\limits_{t=0}^T v^t A^{est}_t$ 
+& $\sum\limits_{t=0}^T v^t A^{tot}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Horizonte 
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total
+& Pensionistas de montepío orfandad
+& Pensionistas de montepío viudedad 
+& Aporte estatal                
+& Aporte total \\
+& $t$       
+& $\sum\limits_{t=0}^T v^t A^2_t$ 
+& $\sum\limits_{t=0}^T v^t A^{12}_t$
+& $\sum\limits_{t=0}^T v^t A^{15}_t$
+& $\sum\limits_{t=0}^T v^t A^{16}_t$
+& $\sum\limits_{t=0}^T v^t A^{est}_t$ 
+& $\sum\limits_{t=0}^T v^t A^{tot}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\ 
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_aportes_vap_escenario_1.tex}
+
+\end{longtable}
+}
+\end{landscape}
+%\clearpage
+
+% Escenario 1 tabla beneficios dinámico ------------------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}R{0.7cm}*{7}{R{2.5cm}}}
+\caption{Escenario legal: beneficios balance dinámico}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$ y horizontes de proyección 
+$T \in \{0,\ldots,40\}$}
+\label{tab:bal_ben_esc_1}\\
+
+\toprule
+Año 
+& $T$
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por indemnizaciones
+& Beneficios por subsidios
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+&
+& $\sum\limits_{t=0}^T v^t B^{12}_t$
+& $\sum\limits_{t=0}^T v^t B^{13}_t$
+& $\sum\limits_{t=0}^T v^t B^{14}_t$
+& $\sum\limits_{t=0}^T v^t B^{15}_t$
+& $\sum\limits_{t=0}^T v^t B^{16}_t$
+& $\sum\limits_{t=0}^T v^t B^{sal}_t$
+& $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& $T$
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por indemnizaciones
+& Beneficios por subsidios
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+&
+& $\sum\limits_{t=0}^T v^t B^{12}_t$
+& $\sum\limits_{t=0}^T v^t B^{13}_t$
+& $\sum\limits_{t=0}^T v^t B^{14}_t$
+& $\sum\limits_{t=0}^T v^t B^{15}_t$
+& $\sum\limits_{t=0}^T v^t B^{16}_t$
+& $\sum\limits_{t=0}^T v^t B^{sal}_t$
+& $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{9}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_beneficios_vap_escenario_1.tex}
+
+\end{longtable}
+}
+\end{landscape}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Balance corriente y evolución de la reserva para el escenario legal}
+\label{chp_valuacionactu:esc_1:balcorr}
+
+La tabla \ref{tab:bal_corr_tot_esc_1} y la figura \ref{graf:bal_cap_esc_1} presentan la evolución
+del balance corriente y evolución de la reserva para horizontes $T \in \{0,\ldots,40\}$. En la
+tabla \ref{tab:bal_corr_ben_esc_1}, se observa el detalle de los beneficios. El gráfico 
+\ref{graf:apo_ben_bal_cap_esc_1} presenta la evolución de los aportes (línea azul) y la evolución 
+de los beneficios (línea verde).
+
+% Escenario 1 balance corriente  -------------------------------------------------------------------
+\begin{figure}[H]
+\caption{Escenario legal: la reserva $V^{cap}_t$}
+\label{graf:bal_cap_esc_1}
+\centering
+\includegraphics[scale=0.95]{graficos/iess_balance_capitalizado_rv_escenario_1.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Escenario legal: aportes y beneficios del balance capitalizado}
+\label{graf:apo_ben_bal_cap_esc_1}
+\centering
+\includegraphics[scale=0.95]{graficos/iess_apo_ben_bal_capitalizado_escenario_1.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}*{5}{R{2.5cm}}}
+\caption{Escenario legal: balance corriente}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$}
+\label{tab:bal_corr_tot_esc_1} \\
+\toprule
+Año 
+& Aportes 
+& Beneficios 
+& Gasto administrativo 
+& Balance corriente 
+& Balance capitalizado \\
+$t$ 
+& $A_t$ 
+& $B_t$ 
+& $G_t$ 
+& $V^{cor}_t$ 
+& $V^{cap}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Aportes 
+& Beneficios 
+& Gasto administrativo 
+& Balance corriente 
+& Balance capitalizado \\
+$t$ 
+& $A_t$ 
+& $B_t$ 
+& $G_t$ 
+& $V^{cor}_t$ 
+& $V^{cap}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{6}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_corriente_escenario_1.tex}
+
+\end{longtable}
+}
+\end{landscape}
+
+% Escenario 1 aportes balance corriente ------------------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}*{6}{R{2.5cm}}}
+\caption{Escenario legal: aportes balance corriente}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$}
+\label{tab:bal_corr_apo_esc_1}\\
+
+\toprule
+Año  
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total 
+& Pensionistas de montepío orfandad 
+& Pensionistas de montepío viudedad 
+& Aporte estatal
+& Aporte total \\
+& $A^2_t$
+& $A^{12}_t$
+& $A^{15}_t$
+& $A^{16}_t$
+& $A^{est}_t$
+& $A^{tot}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año  
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total 
+& Pensionistas de montepío orfandad 
+& Pensionistas de montepío viudedad 
+& Aporte estatal
+& Aporte total \\
+& $A^2_t$
+& $A^{12}_t$
+& $A^{15}_t$
+& $A^{16}_t$
+& $A^{est}_t$
+& $A^{tot}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{7}{r}{continúa...} \\ 
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_aportes_escenario_1.tex}
+
+\end{longtable}
+}
+\end{landscape}
+
+\clearpage
+
+% Escenario 1 tabla beneficios balance corriente ---------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}*{7}{R{2.5cm}}}
+\caption{Escenario legal: beneficios balance corriente}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_1}\%$}
+\label{tab:bal_corr_ben_esc_1}\\
+
+\toprule
+Año 
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por subsidios
+& Beneficios por indemnizaciones
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+     
+& $B^{12}_t$ 
+& $B^{13}_t$ 
+& $B^{14}_t$ 
+& $B^{15}_t$ 
+& $B^{16}_t$ 
+& $B^{sal}_t$ 
+& $B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por subsidios
+& Beneficios por indemnizaciones
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+     
+& $B^{12}_t$ 
+& $B^{13}_t$ 
+& $B^{14}_t$ 
+& $B^{15}_t$ 
+& $B^{16}_t$ 
+& $B^{sal}_t$ 
+& $B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+\input{tablas/iess_balance_beneficios_escenario_1.tex}
+\end{longtable}
+}
+\end{landscape}
+
+% Escenario 2 --------------------------------------------------------------------------------------
+\section{Valuación actuarial bajo el escenario intermedio}
+\label{chp_valuacion:esc_intermedio}
+
+El escenario intermedio es el más probable o verosímil. En este escenario se utilizan las siguientes
+hipótesis: tasa actuarial, \Sexpr{REP$tasa_act_esc_2}\%; tasa de crecimiento de los salarios, \Sexpr{REP$tasa_sal_esc_2}\%; y tasa de crecimiento del salario básico unificado \Sexpr{REP$tasa_sbu_esc_2}\%. Además, se establece que los gastos
+administrativos son igual al \Sexpr{REP$tasa_por_gas_esc_2}\% de la masa salarial.
+
+Este escenario considera las siguientes fuentes de financiamiento: la tasa de aportación de los
+afiliados activos igual a 0,38\% a partir del 2021, establecido en la \legalcite{ResIESS_CD515}; la tasa de aportación del estado igual a \Sexpr{REP$apo_est_esc_2}\%, la cual es el promedio observado en los últimos años; y se consideró el fallo de la corte constitucional sobre el cese de los aportes del 2,76\% por parte de los pensionistas para financiar auxilio de funerales y décimas.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Balance actuarial para el escenario intermedio}
+\label{chp_valuacionactu:esc_2:balactu}
+
+La tabla \ref{tab:iess_bal_act_vap_escenario_2} presenta el balance actuarial para el año 2060 del
+escenario intermedio. El escenario intermedio registra un superávit igual a USD \Sexpr{REP$bal_act_esc_2}, en
+términos actuariales, en el año 2060, el cual se obtiene de la diferencia entre su activo actuarial
+(USD \Sexpr{REP$bal_sum_act_esc_2}) y su pasivo actuarial (USD \Sexpr{REP$bal_sum_pas_esc_2}), en valor
+presente. Por último, su prima suficiente alcanza el \Sexpr{REP$pri_med_niv_esc_2}\%.
+\begin{table}[H]
+\centering
+\caption{Balance actuarial en el escenario intermedio}
+\label{tab:iess_bal_act_vap_escenario_2}
+\caption*{Fecha de valuación: al \Sexpr{REP$fec_fin}}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{lr}
+\toprule
+Componente:	& Valor (USD) \\
+\midrule
+% el comando \csname es para evitar un error cuando el input comienza con \multicolumn
+ \csname @@input\endcsname tablas/iess_bal_act_vap_escenario_2.tex
+%\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{table}
+
+% Escenario 2 balance actuarial dinámico -----------------------------------------------------------
+La tabla \ref{tab:bal_act_tot_esc_2} y la figura \ref{graf:bal_vap_esc_2} presentan la evolución del
+balance actuarial dinámico para horizontes $T \in \{0,\ldots,40\}$. En la tabla
+\ref{tab:bal_ben_esc_2}, se observa el detalle de los beneficios por pago de prestaciones; en
+cambio, en la tabla \ref{tab:iess_bal_act_vap_escenario_2}, se presenta la reserva, $V_t$, del
+\Sexpr{REP_seg} para cada año hasta el año 2060. El gráfico \ref{graf:apo_ben_bal_din_esc_2} presenta la
+comparación entre los aportes (línea azul) y los beneficios (línea verde).
+\begin{figure}[H]
+\caption{Escenario intermedio: evolución del balance actuarial $V_T$}
+\label{graf:bal_vap_esc_2}
+\centering
+\includegraphics[scale=1]{graficos/iess_balance_vap_rv_escenario_2.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Escenario intermedio: aportes y beneficios del balance actuarial $V_T$}
+\label{graf:apo_ben_bal_din_esc_2}
+\centering
+\includegraphics[scale=1]{graficos/iess_apo_ben_bal_dinamico_escenario_2.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{L{1cm}R{1cm}*{6}{R{2.5cm}}}
+\caption{Escenario intermedio: balance actuarial dinámico}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_2}\%$ y horizontes de proyección 
+$T \in \{0,\ldots,40\}$}
+\label{tab:bal_act_tot_esc_2} \\
+\toprule
+Año 
+& Horizonte 
+& Aportes
+& Aporte estatal
+& Beneficios
+& Gasto administrativo
+& Reserva inicial
+& Balance actuarial\\
+& $T$
+& $\sum\limits_{t=0}^T v^t A_t$ 
+& $\sum\limits_{t=0}^T v^t A^{est}_t$
+& $\sum\limits_{t=0}^T v^t B_t$ 
+& $\sum\limits_{t=0}^T v^t G_t$
+& $V_0$
+& $V_T$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Horizonte
+& Aportes
+& Aporte estatal
+& Beneficios
+& Gasto administrativo
+& Reserva inicial 
+& Balance actuarial\\
+& $T$
+& $\sum\limits_{t=0}^T v^t A_t$ 
+& $\sum\limits_{t=0}^T v^t A^{est}_t$
+& $\sum\limits_{t=0}^T v^t B_t$
+& $\sum\limits_{t=0}^T v^t G_t$
+& $V_0$
+& $V_T$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+\input{tablas/iess_balance_actuarial_escenario_2.tex}
+\end{longtable}
+}
+\end{landscape}
+
+% Escenario 2 tabla aportes dinámico ---------------------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}R{0.7cm}*{6}{R{2.5cm}}}
+\caption{Escenario intermedio: aportes balance dinámico}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_2}\%$ y horizontes de proyección 
+$T \in \{0,\ldots,40\}$}
+\label{tab:bal_apo_esc_2}\\
+
+\toprule
+Año 
+& Horizonte 
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total
+& Pensionistas de montepío orfandad
+& Pensionistas de montepío viudedad 
+& Aporte estatal                
+& Aporte total \\
+& $t$       
+& $\sum\limits_{t=0}^T v^t A^2_t$ 
+& $\sum\limits_{t=0}^T v^t A^{12}_t$
+& $\sum\limits_{t=0}^T v^t A^{15}_t$
+& $\sum\limits_{t=0}^T v^t A^{16}_t$
+& $\sum\limits_{t=0}^T v^t A^{est}_t$ 
+& $\sum\limits_{t=0}^T v^t A^{tot}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Horizonte 
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total
+& Pensionistas de montepío orfandad
+& Pensionistas de montepío viudedad 
+& Aporte estatal                
+& Aporte total \\
+& $t$       
+& $\sum\limits_{t=0}^T v^t A^2_t$ 
+& $\sum\limits_{t=0}^T v^t A^{12}_t$
+& $\sum\limits_{t=0}^T v^t A^{15}_t$
+& $\sum\limits_{t=0}^T v^t A^{16}_t$
+& $\sum\limits_{t=0}^T v^t A^{est}_t$ 
+& $\sum\limits_{t=0}^T v^t A^{tot}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\ 
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_aportes_vap_escenario_2.tex}
+
+\end{longtable}
+}
+\end{landscape}
+%\clearpage
+
+% Escenario 2 tabla beneficios dinámico ------------------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}R{0.7cm}*{7}{R{2.5cm}}}
+\caption{Escenario intermedio: beneficios balance dinámico}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_2}\%$ y horizontes de proyección 
+$T \in \{0,\ldots,40\}$}
+\label{tab:bal_ben_esc_2}\\
+
+\toprule
+Año 
+& $T$
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por indemnizaciones
+& Beneficios por subsidios
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+&
+& $\sum\limits_{t=0}^T v^t B^{12}_t$
+& $\sum\limits_{t=0}^T v^t B^{13}_t$
+& $\sum\limits_{t=0}^T v^t B^{14}_t$
+& $\sum\limits_{t=0}^T v^t B^{15}_t$
+& $\sum\limits_{t=0}^T v^t B^{16}_t$
+& $\sum\limits_{t=0}^T v^t B^{sal}_t$
+& $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& $T$
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por indemnizaciones
+& Beneficios por subsidios
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+&
+& $\sum\limits_{t=0}^T v^t B^{12}_t$
+& $\sum\limits_{t=0}^T v^t B^{13}_t$
+& $\sum\limits_{t=0}^T v^t B^{14}_t$
+& $\sum\limits_{t=0}^T v^t B^{15}_t$
+& $\sum\limits_{t=0}^T v^t B^{16}_t$
+& $\sum\limits_{t=0}^T v^t B^{sal}_t$
+& $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{9}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_beneficios_vap_escenario_2.tex}
+
+\end{longtable}
+}
+\end{landscape}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Balance corriente y evolución de la reserva para el escenario intermedio}
+\label{chp_valuacionactu:esc_2:balcorr}
+
+La tabla \ref{tab:bal_corr_tot_esc_2} y la figura \ref{graf:bal_cap_esc_2} presentan la evolución
+del balance corriente y evolución de la reserva para horizontes $T \in \{0,\ldots,40\}$. En la
+tabla \ref{tab:bal_corr_ben_esc_2}, se observa el detalle de los beneficios. El gráfico 
+\ref{graf:apo_ben_bal_cap_esc_2} presenta la evolución de los aportes (línea azul) y la evolución 
+de los beneficios (línea verde).
+
+% Escenario 2 balance corriente  -------------------------------------------------------------------
+\begin{figure}[H]
+\caption{Escenario intermedio: la reserva $V^{cap}_t$}
+\label{graf:bal_cap_esc_2}
+\centering
+\includegraphics[scale=0.95]{graficos/iess_balance_capitalizado_rv_escenario_2.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Escenario intermedio: aportes y beneficios del balance capitalizado}
+\label{graf:apo_ben_bal_cap_esc_2}
+\centering
+\includegraphics[scale=0.95]{graficos/iess_apo_ben_bal_capitalizado_escenario_2.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}*{5}{R{2.5cm}}}
+\caption{Escenario intermedio: balance corriente}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_2}\%$}
+\label{tab:bal_corr_tot_esc_2} \\
+\toprule
+Año 
+& Aportes 
+& Beneficios 
+& Gasto administrativo 
+& Balance corriente 
+& Balance capitalizado \\
+$t$ 
+& $A_t$ 
+& $B_t$ 
+& $G_t$ 
+& $V^{cor}_t$ 
+& $V^{cap}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Aportes 
+& Beneficios 
+& Gasto administrativo 
+& Balance corriente 
+& Balance capitalizado \\
+$t$ 
+& $A_t$ 
+& $B_t$ 
+& $G_t$ 
+& $V^{cor}_t$ 
+& $V^{cap}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{6}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_corriente_escenario_2.tex}
+
+\end{longtable}
+}
+\end{landscape}
+
+% Escenario 2 aportes balance corriente ------------------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}*{6}{R{2.5cm}}}
+\caption{Escenario intermedio: aportes balance corriente}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_2}\%$}
+\label{tab:bal_corr_apo_esc_2}\\
+
+\toprule
+Año  
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total 
+& Pensionistas de montepío orfandad 
+& Pensionistas de montepío viudedad 
+& Aporte estatal
+& Aporte total \\
+& $A^2_t$
+& $A^{12}_t$
+& $A^{15}_t$
+& $A^{16}_t$
+& $A^{est}_t$
+& $A^{tot}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año  
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total 
+& Pensionistas de montepío orfandad 
+& Pensionistas de montepío viudedad 
+& Aporte estatal
+& Aporte total \\
+& $A^2_t$
+& $A^{12}_t$
+& $A^{15}_t$
+& $A^{16}_t$
+& $A^{est}_t$
+& $A^{tot}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{7}{r}{continúa...} \\ 
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_aportes_escenario_2.tex}
+
+\end{longtable}
+}
+\end{landscape}
+
+\clearpage
+
+% Escenario 2 tabla beneficios balance corriente ---------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}*{7}{R{2.5cm}}}
+\caption{Escenario intermedio: beneficios balance corriente}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_2}\%$}
+\label{tab:bal_corr_ben_esc_2}\\
+
+\toprule
+Año 
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por subsidios
+& Beneficios por indemnizaciones
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+     
+& $B^{12}_t$ 
+& $B^{13}_t$ 
+& $B^{14}_t$ 
+& $B^{15}_t$ 
+& $B^{16}_t$ 
+& $B^{sal}_t$ 
+& $B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por subsidios
+& Beneficios por indemnizaciones
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+     
+& $B^{12}_t$ 
+& $B^{13}_t$ 
+& $B^{14}_t$ 
+& $B^{15}_t$ 
+& $B^{16}_t$ 
+& $B^{sal}_t$ 
+& $B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+\input{tablas/iess_balance_beneficios_escenario_2.tex}
+\end{longtable}
+}
+\end{landscape}
+
+
+
+% Escenario 3 --------------------------------------------------------------------------------------
+\section{Valuación actuarial bajo el escenario pesimista}
+\label{chp_valuacion:esc_pesimista}
+
+El escenario pesimista es el escenario que considera el cese total de las aportaciones del Estado al 40\% de las pensiones de este Seguro. En este escenario se utilizan las siguientes
+hipótesis: tasa actuarial, \Sexpr{REP$tasa_act_esc_3}\%; tasa de crecimiento de los salarios, \Sexpr{REP$tasa_sal_esc_3}\%; y tasa de crecimiento del salario básico unificado \Sexpr{REP$tasa_sbu_esc_3}\%. Además, se establece que los gastos
+administrativos son igual al \Sexpr{REP$tasa_por_gas_esc_3}\% de la masa salarial.
+
+Este escenario considera las siguientes fuentes de financiamiento: la tasa de aportación de los
+afiliados activos igual a 0,38\% a partir del 2021, establecido en la \legalcite{ResIESS_CD515}; y se consideró el fallo de la corte constitucional sobre el cese de los aportes del 2,76\% por parte de los pensionistas para financiar auxilio de funerales y décimas.
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Balance actuarial para el escenario pesimista}
+\label{chp_valuacionactu:esc_3:balactu}
+
+La tabla \ref{tab:iess_bal_act_vap_escenario_3} presenta el balance actuarial para el año 2060 del
+escenario pesimista. El escenario pesimista registra un superávit igual a USD \Sexpr{REP$bal_act_esc_3}, en
+términos actuariales, en el año 2060, el cual se obtiene de la diferencia entre su activo actuarial
+(USD \Sexpr{REP$bal_sum_act_esc_3}) y su pasivo actuarial (USD \Sexpr{REP$bal_sum_pas_esc_3}), en valor
+presente. Por último, su prima suficiente alcanza el \Sexpr{REP$pri_med_niv_esc_3}\%.
+\begin{table}[H]
+\centering
+\caption{Balance actuarial en el escenario pesimista}
+\label{tab:iess_bal_act_vap_escenario_3}
+\caption*{Fecha de valuación: al \Sexpr{REP$fec_fin}}
+{\fontsize{10}{12}\selectfont
+\begin{tabular}{lr}
+\toprule
+Componente:	& Valor (USD) \\
+\midrule
+% el comando \csname es para evitar un error cuando el input comienza con \multicolumn
+ \csname @@input\endcsname tablas/iess_bal_act_vap_escenario_3.tex
+%\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{table}
+% Escenario 2 balance actuarial dinámico -----------------------------------------------------------
+La tabla \ref{tab:bal_act_tot_esc_3} y la figura \ref{graf:bal_vap_esc_3} presentan la evolución del
+balance actuarial dinámico para horizontes $T \in \{0,\ldots,40\}$. En la tabla
+\ref{tab:bal_ben_esc_3}, se observa el detalle de los beneficios por pago de prestaciones; en
+cambio, en la tabla \ref{tab:iess_bal_act_vap_escenario_3}, se presenta la reserva, $V_t$, del
+\Sexpr{REP_seg} para cada año hasta el año 2060. El gráfico \ref{graf:apo_ben_bal_din_esc_3} presenta la
+comparación entre los aportes (línea azul) y los beneficios (línea verde).
+\begin{figure}[H]
+\caption{Escenario pesimista: evolución del balance actuarial $V_T$}
+\label{graf:bal_vap_esc_3}
+\centering
+\includegraphics[scale=1]{graficos/iess_balance_vap_rv_escenario_3.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Escenario pesimista: aportes y beneficios del balance actuarial $V_T$}
+\label{graf:apo_ben_bal_din_esc_3}
+\centering
+\includegraphics[scale=1]{graficos/iess_apo_ben_bal_dinamico_escenario_3.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{L{1cm}R{1cm}*{6}{R{2.5cm}}}
+\caption{Escenario pesimista: balance actuarial dinámico}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_3}\%$ y horizontes de proyección 
+$T \in \{0,\ldots,40\}$}
+\label{tab:bal_act_tot_esc_3} \\
+\toprule
+Año 
+& Horizonte 
+& Aportes
+& Aporte estatal
+& Beneficios
+& Gasto administrativo
+& Reserva inicial
+& Balance actuarial\\
+& $T$
+& $\sum\limits_{t=0}^T v^t A_t$ 
+& $\sum\limits_{t=0}^T v^t A^{est}_t$
+& $\sum\limits_{t=0}^T v^t B_t$ 
+& $\sum\limits_{t=0}^T v^t G_t$
+& $V_0$
+& $V_T$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Horizonte
+& Aportes
+& Aporte estatal
+& Beneficios
+& Gasto administrativo
+& Reserva inicial 
+& Balance actuarial\\
+& $T$
+& $\sum\limits_{t=0}^T v^t A_t$ 
+& $\sum\limits_{t=0}^T v^t A^{est}_t$
+& $\sum\limits_{t=0}^T v^t B_t$
+& $\sum\limits_{t=0}^T v^t G_t$
+& $V_0$
+& $V_T$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+\input{tablas/iess_balance_actuarial_escenario_3.tex}
+\end{longtable}
+}
+\end{landscape}
+
+% Escenario 3 tabla aportes dinámico ---------------------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}R{0.7cm}*{6}{R{2.5cm}}}
+\caption{Escenario pesimista: aportes balance dinámico}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_3}\%$ y horizontes de proyección 
+$T \in \{0,\ldots,40\}$}
+\label{tab:bal_apo_esc_3}\\
+
+\toprule
+Año 
+& Horizonte 
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total
+& Pensionistas de montepío orfandad
+& Pensionistas de montepío viudedad 
+& Aporte estatal                
+& Aporte total \\
+& $t$       
+& $\sum\limits_{t=0}^T v^t A^2_t$ 
+& $\sum\limits_{t=0}^T v^t A^{12}_t$
+& $\sum\limits_{t=0}^T v^t A^{15}_t$
+& $\sum\limits_{t=0}^T v^t A^{16}_t$
+& $\sum\limits_{t=0}^T v^t A^{est}_t$ 
+& $\sum\limits_{t=0}^T v^t A^{tot}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Horizonte 
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total
+& Pensionistas de montepío orfandad
+& Pensionistas de montepío viudedad 
+& Aporte estatal                
+& Aporte total \\
+& $t$       
+& $\sum\limits_{t=0}^T v^t A^2_t$ 
+& $\sum\limits_{t=0}^T v^t A^{12}_t$
+& $\sum\limits_{t=0}^T v^t A^{15}_t$
+& $\sum\limits_{t=0}^T v^t A^{16}_t$
+& $\sum\limits_{t=0}^T v^t A^{est}_t$ 
+& $\sum\limits_{t=0}^T v^t A^{tot}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\ 
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_aportes_vap_escenario_3.tex}
+
+\end{longtable}
+}
+\end{landscape}
+%\clearpage
+
+% Escenario 3 tabla beneficios dinámico ------------------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}R{0.7cm}*{7}{R{2.5cm}}}
+\caption{Escenario pesimista: beneficios balance dinámico}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_3}\%$ y horizontes de proyección 
+$T \in \{0,\ldots,40\}$}
+\label{tab:bal_ben_esc_3}\\
+
+\toprule
+Año 
+& $T$
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por indemnizaciones
+& Beneficios por subsidios
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+&
+& $\sum\limits_{t=0}^T v^t B^{12}_t$
+& $\sum\limits_{t=0}^T v^t B^{13}_t$
+& $\sum\limits_{t=0}^T v^t B^{14}_t$
+& $\sum\limits_{t=0}^T v^t B^{15}_t$
+& $\sum\limits_{t=0}^T v^t B^{16}_t$
+& $\sum\limits_{t=0}^T v^t B^{sal}_t$
+& $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& $T$
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por indemnizaciones
+& Beneficios por subsidios
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+&
+& $\sum\limits_{t=0}^T v^t B^{12}_t$
+& $\sum\limits_{t=0}^T v^t B^{13}_t$
+& $\sum\limits_{t=0}^T v^t B^{14}_t$
+& $\sum\limits_{t=0}^T v^t B^{15}_t$
+& $\sum\limits_{t=0}^T v^t B^{16}_t$
+& $\sum\limits_{t=0}^T v^t B^{sal}_t$
+& $\sum\limits_{t=0}^T v^t B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{9}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_beneficios_vap_escenario_3.tex}
+
+\end{longtable}
+}
+\end{landscape}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Balance corriente y evolución de la reserva para el escenario pesimista}
+\label{chp_valuacionactu:esc_3:balcorr}
+
+La tabla \ref{tab:bal_corr_tot_esc_3} y la figura \ref{graf:bal_cap_esc_3} presentan la evolución
+del balance corriente y evolución de la reserva para horizontes $T \in \{0,\ldots,40\}$. En la
+tabla \ref{tab:bal_corr_ben_esc_3}, se observa el detalle de los beneficios. El gráfico 
+\ref{graf:apo_ben_bal_cap_esc_3} presenta la evolución de los aportes (línea azul) y la evolución 
+de los beneficios (línea verde).
+
+% Escenario 3 balance corriente  -------------------------------------------------------------------
+\begin{figure}[H]
+\caption{Escenario pesimista: la reserva $V^{cap}_t$}
+\label{graf:bal_cap_esc_3}
+\centering
+\includegraphics[scale=0.95]{graficos/iess_balance_capitalizado_rv_escenario_3.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Escenario pesimista: aportes y beneficios del balance capitalizado}
+\label{graf:apo_ben_bal_cap_esc_3}
+\centering
+\includegraphics[scale=0.95]{graficos/iess_apo_ben_bal_capitalizado_escenario_3.pdf}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{figure}
+
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}*{5}{R{2.5cm}}}
+\caption{Escenario pesimista: balance corriente}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_3}\%$}
+\label{tab:bal_corr_tot_esc_3} \\
+\toprule
+Año 
+& Aportes 
+& Beneficios 
+& Gasto administrativo 
+& Balance corriente 
+& Balance capitalizado \\
+$t$ 
+& $A_t$ 
+& $B_t$ 
+& $G_t$ 
+& $V^{cor}_t$ 
+& $V^{cap}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Aportes 
+& Beneficios 
+& Gasto administrativo 
+& Balance corriente 
+& Balance capitalizado \\
+$t$ 
+& $A_t$ 
+& $B_t$ 
+& $G_t$ 
+& $V^{cor}_t$ 
+& $V^{cap}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{6}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_corriente_escenario_3.tex}
+
+\end{longtable}
+}
+\end{landscape}
+
+% Escenario 3 aportes balance corriente ------------------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}*{6}{R{2.5cm}}}
+\caption{Escenario pesimista: aportes balance corriente}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_3}\%$}
+\label{tab:bal_corr_apo_esc_3}\\
+
+\toprule
+Año  
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total 
+& Pensionistas de montepío orfandad 
+& Pensionistas de montepío viudedad 
+& Aporte estatal
+& Aporte total \\
+& $A^2_t$
+& $A^{12}_t$
+& $A^{15}_t$
+& $A^{16}_t$
+& $A^{est}_t$
+& $A^{tot}_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año  
+& Activos
+& Pensionistas de incapacidad permanente parcial, absoluta y total 
+& Pensionistas de montepío orfandad 
+& Pensionistas de montepío viudedad 
+& Aporte estatal
+& Aporte total \\
+& $A^2_t$
+& $A^{12}_t$
+& $A^{15}_t$
+& $A^{16}_t$
+& $A^{est}_t$
+& $A^{tot}_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{7}{r}{continúa...} \\ 
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_balance_aportes_escenario_3.tex}
+
+\end{longtable}
+}
+\end{landscape}
+
+\clearpage
+
+% Escenario 3 tabla beneficios balance corriente ---------------------------------------------------
+\begin{landscape}
+{\fontsize{10}{12}\selectfont
+\begin{longtable}[H]{R{0.5cm}*{7}{R{2.5cm}}}
+\caption{Escenario pesimista: beneficios balance corriente}\\
+\caption*{Configuración del escenario con aporte estatal $\alpha_{est}=\Sexpr{REP$apo_est_esc_3}\%$}
+\label{tab:bal_corr_ben_esc_3}\\
+
+\toprule
+Año 
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por subsidios
+& Beneficios por indemnizaciones
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+     
+& $B^{12}_t$ 
+& $B^{13}_t$ 
+& $B^{14}_t$ 
+& $B^{15}_t$ 
+& $B^{16}_t$ 
+& $B^{sal}_t$ 
+& $B_t$ \\
+\midrule
+\endfirsthead
+
+\toprule
+Año 
+& Beneficios de incapacidad permanente parcial, absoluta y total 
+& Beneficios por subsidios
+& Beneficios por indemnizaciones
+& Beneficios de orfandad 
+& Beneficios de viudedad  
+& Beneficios prestaciones médico asistenciales 
+& Beneficios totales \\
+     
+& $B^{12}_t$ 
+& $B^{13}_t$ 
+& $B^{14}_t$ 
+& $B^{15}_t$ 
+& $B^{16}_t$ 
+& $B^{sal}_t$ 
+& $B_t$ \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{8}{r}{continúa...} \\
+\endfoot
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+\input{tablas/iess_balance_beneficios_escenario_3.tex}
+\end{longtable}
+}
+\end{landscape}

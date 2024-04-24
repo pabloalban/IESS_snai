@@ -1,0 +1,8 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Construcción de tablas biométricas}
+\label{chp_tbiometrica}
+
+El proceso para calcular la tablas biométricas constituye una parte fundamental del modelo actuarial.
+En este estudio usamos el proceso que se describe a continuación.
+
+%---------------------------------------------------------------------------------------------------

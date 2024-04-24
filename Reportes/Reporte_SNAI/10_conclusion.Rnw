@@ -1,0 +1,68 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Conclusiones y recomendaciones}
+\label{chp_conclusion}
+
+%---------------------------------------------------------------------------------------------------
+\section{Situación actual}
+\label{chp_conclusion:sitactual}
+Conforme a los estados financieros con corte al 31 de diciembre del 2020, el \Sexpr{REP_seg} cuenta
+con un patrimonio de USD \Sexpr{REP$cap_ini}.
+%---------------------------------------------------------------------------------------------------
+\section{Conclusiones}
+\label{chp_conclusion:conclusiones}
+Del presente estudio se obtienen las siguientes conclusiones:
+\begin{enumerate}[itemsep=0mm, topsep=0pt]
+
+
+\item Bajo el escenario legal, en que el Estado cumple con el pago del \Sexpr{REP$apo_est_esc_1}\% para financiar la entrega de pensiones, el superávit actuarial en el período de valuación 2020 - 2060, alcanza USD \Sexpr{REP$bal_act_esc_1}, su prima suficiente que mantiene el equilibrio financiero en el período anotado es \Sexpr{REP$pri_med_niv_esc_1}\%, existiendo un remanente de prima de 0,30233\%.
+
+\item Bajo el escenario intermedio en el que se asume que el Estado únicamente contribuirá para el pago de beneficios de pensiones con el \Sexpr{REP$apo_est_esc_2}\%, el superávit actuarial durante el período de valuación alcanza USD \Sexpr{REP$bal_act_esc_2}. Por lo tanto, su prima suficiente que mantiene el equilibrio financiero en este período es \Sexpr{REP$pri_med_niv_esc_2}\%, existiendo un remanente de prima de 0,2953\%.
+
+\item Bajo el escenario pesimista, en el que Estado no aporta para pagar beneficios, el superávit actuarial en el período de valuación 2020 a 2060 alcanza USD \Sexpr{REP$bal_act_esc_3}, y su prima suficiente para mantener el equilibrio financiero en el citado período es \Sexpr{REP$pri_med_niv_esc_3}\%.
+
+\item Durante el período 2017 a 2019, se realizaron desinversiones por un valor de USD 35.500.000,00. Desinversiones que dejan ver que no existe un plan de inversiones, ni tampoco estudios de liquidez de los fondos administrados por el BIESS.
+
+\item Por el período abril 2015 a diciembre de 2018, el Estado ecuatoriano dejó de contribuir USD 156.105.894,01 al \Sexpr{REP_seg}, para el financiamiento de las pensiones y las décimo tercera y cuarta pensiones, lo cual generó un lucro cesante de USD 83.700.488,04 como rendimiento de estos valores, dando un total de USD 239.806.382,04; que es el valor que dejó de percibir el fondo. A partir del 01 de enero de 2019, se reinicia la contribución del 40\% del Estado.
+
+\item Los beneficios de auxilios de funerales causados por fallecimientos, tanto de afiliados activos producidos por accidentes laborales y pensionistas de este seguro no son entregados por parte del Seguro de Riesgos del Trabajo, son concedidos por el Seguro de Invalidez, Vejez y Muerte, según lo establecido por la disposición General Décima de la \legalcite{ResIESS_CD100} .
+
+\item Al 31 de diciembre de 2020, los fondos administrados por el BIESS pertenecientes al \Sexpr{REP_seg}, ascienden a USD 1.122.766.037,27, los cuales obtienen una tasa de rendimiento igual a 9,30\%, de los cuales USD 583.028.024,95 (51,93\%) están invertidos en créditos quirografarios.
+
+\item No existe registro de afiliados pertenecientes al régimen voluntario que hayan recibido beneficios por parte del \Sexpr{REP_seg}, a excepción de servicios de salud.
+
+% \item Durante el año 2020, según los estados financieros hubo un desembolso de USD 4.125.019,20 por gastos destinados al pago de personal por servicios prestados.
+
+\item No existe una adecuada metodología para registrar de accidentes laborales o enfermedades profesionales atendidas en las unidades médicas del IESS, es por ello, que no se pueda formar estadísticas de estos siniestros y tampoco se dispone de siniestralidad que sea la base de formación de tablas morbilidad pertenecientes a este Seguro.
+
+\item Durante el 2020, solo se calificó a 68 nuevos pensionistas de orfandad del SGRT; mientras que en el año 2012 se calificó a 544 nuevos pensionistas. De igual manera, sucede con viudedad que en el año 2020, se calificó a 48 nuevos pensionistas; pero en 2012, se calificó a 309. Como consecuencia de ello, no se pueden elaborar tablas de mortalidad dinámicas.
+
+\end{enumerate}
+
+%---------------------------------------------------------------------------------------------------
+\section{Recomendaciones}
+\label{chp_conclusion:recomendacion}
+Sobre la base del análisis efectuado y los resultados obtenidos en el presente estudio, se emiten
+las siguientes recomendaciones, con la finalidad de que:
+
+\begin{enumerate}
+
+\item El Director General disponga a la Dirección del Seguro General de Riesgos del Trabajo elabore un informe de los beneficios entregados a los afiliados del régimen voluntario y la viabilidad de entrega de estos beneficios a este grupo; en caso, existir la posibilidad de entrega, la DSGRT deberá presentar un proyecto de reforma al Reglamento del SGRT para implementar los procesos necesarios; en el caso que no exista manera de entregar beneficios de SGRT a los voluntarios, su aporte se deberá analizado.
+
+% \item El Director General disponga a la Dirección del Seguro General de Riesgos del Trabajo elabore un informe sobre el ingreso de nuevos pensionistas por año, indicando a cuantos se le ha otorgado el derecho por incapacidad total, absoluta y montepíos del SGRT y a cuantos se ha rechazado, justificando el bajo número de entregas de estos beneficios, desde el año 2016.
+
+\item El Director General disponga al Seguro General de Salud Individual y Familiar, en coordinación con la Dirección del Seguro General de Riesgos del Trabajo tomen las medidas necesarias para que se registre adecuadamente en los sistemas de las atenciones médico-asistenciales del Seguro General de Riesgos del Trabajo por enfermedades profesionales y accidentes laborales.
+
+\item El Director General disponga a la Dirección Actuarial, de Investigación y Estadística la elaboración de un estudio actuarial que determine la prima suficiente de las atenciones médico-asistenciales del Seguro General de Riesgos del Trabajo; después que la Dirección del Seguro General de Riesgos del Trabajo haya identificado las atenciones médico-asistenciales de este seguro, mediante una metodología previamente aprobada por las autoridades del IESS.
+
+% \item El Consejo Directivo exhorte al Estado se transfiera en forma oportuna las obligaciones por concepto del 40\% para el financiamiento de las pensiones, evitando la generación de cuentas por cobrar.
+
+\item El Director General que disponga a la Dirección Nacional de Recaudación y Gestión de Cartera el cumplimiento de la Sentencia de la Corte Constitucional No. 1024-19-JP/21 y acumulado de 1 de septiembre de 2021, que determina de manera clara y precisa que el Instituto Ecuatoriano de Seguridad Social debe reformar la normativa interna con el objetivo de reducir al mínimo el tiempo de cobro de las obligaciones patronales, para evitar el desfinanciamiento de los seguros; y, que el IESS tiene la obligación de cobrar de forma ágil y eficientemente las obligaciones patronales, lo que asegurará el financiamiento de las prestaciones.
+
+\item El Director General disponga a la Dirección Nacional de Riesgos Institucionales, el seguimiento y elaboración de informes trimestrales sobre la recuperación y categorías de riesgo por mora de las carteras total obligaciones patronales, acuerdos de pagos parciales y convenios de purga de mora.
+
+\item El Director General disponga a la Dirección del Seguro General de Riesgos del Trabajo revise los reglamentos para la entrega de beneficios de viudedad y orfandad devenientes de pensionistas de riesgos del trabajo y accidentes laborales fatales, debido al bajo número de nuevos ingresos de pensionistas (68 de orfandad y 48 de viudedad en el 2020).
+
+\item El Procuraduría y Dirección del Seguro General de Riesgos del Trabajo propongan al Consejo Directivo la modificación de la Décima Disposición General de la \legalcite{ResIESS_CD100}, con la finalidad de que los beneficios por auxilio de funerales de pensionistas de Riesgos del Trabajo sean entregados por este Seguro.
+
+\end{enumerate}
+

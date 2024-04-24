@@ -1,0 +1,211 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Resumen ejecutivo}
+\label{chp_res_ejec}
+
+%---------------------------------------------------------------------------------------------------
+\section{Definición clara del objeto del estudio}
+\label{chp_res_ejec:objeto}
+El presente estudio actuarial abarca al Seguro General de Riesgos del Trabajo, con fecha de corte 31
+de diciembre de 2020 y un horizonte de 40 años, cuyo objetivo es evaluar la capacidad del Fondo para
+que cumpla con las obligaciones futuras causadas por las contingencias de accidentes de trabajo y 
+enfermedades profesionales u ocupacionales en los escenarios económicos, financieros y demográficos 
+que se esperan a mediano y largo plazo, para que se adopten las resoluciones necesarias que permitan
+garantizar el pago de las prestaciones a los asegurados.
+
+%---------------------------------------------------------------------------------------------------
+\section{Descripción concisa de las características regulatorias del fondo o seguro}
+\label{chp_res_ejec:descripcion}
+El Seguro General de Riesgos del Trabajo es un fondo de capitalización colectiva, con beneficio 
+definido y prima media general. La prima es aplicada mensualmente a la materia gravada, que es 
+depositada en el IESS con la finalidad de formar capitales de inversión y junto con sus rendimientos 
+y demás contribuciones conformar las reservas que garantizarán el pago de los beneficios a los 
+actuales y futuros aportantes; y a los beneficiarios de pensiones en curso de pago y futuro.
+
+La \legalcite{LeySS} en su disposición transitoria ``DECIMOSEXTA.- TASAS DE APORTACION 
+Y CONTRIBUCIONES OBLIGATORIAS'' establece que, para efectos de la recaudación de los aportes y 
+contribuciones al Seguro General de Riesgos del Trabajo, en el numeral 1 literal g el aporte de los 
+afiliados voluntarios y sin relación dependencia; esto es: ``(\ldots) g. Del cero punto cinco por ciento 
+(0.5\%) de la materia gravada de los afiliados obligados sin relación de dependencia y de los 
+afiliados voluntarios, para el Seguro General de Riesgos del Trabajo''.
+
+En cuanto a los afiliados en relación dependencia, en el numeral 2 de la citada disposición 
+transitoria, establece: ``(\ldots) b. Del cero punto cinco por ciento (0,5\%) de la materia gravada de los 
+empleados y obreros, servidores públicos y demás afiliados obligados con relación de dependencia,
+para el Seguro General de Riesgos del Trabajo''.
+
+La \legalcite{ResIESS_CD261} de 26 de mayo de 2009, fija los aportes en 0,55\% como contribución del 
+patrono para el financiamiento de los beneficios que ofrece el Seguro General de Riesgos del Trabajo, 
+a los trabajadores del sector privado bajo relación de dependencia, así como de los miembros del 
+clero secular, empleados bancarios, municipales y de entidades públicas descentralizadas; notarios, 
+registradores de la propiedad y registradores mercantiles, servidores públicos, incluido el 
+magisterio y los funcionarios y empleados de la Función Judicial o de otras dependencias que prestan 
+servicios públicos, mediante remuneración variable, en forma de aranceles o similares, funcionarios
+del servicio exterior residentes en el extranjero, trabajadores autónomos y sin relación de 
+dependencia y de los afiliados voluntarios. Los patronos de trabajadores temporales de la industria azucarera aportan el 1,01\% referido a la 
+remuneración mensual de los trabajadores.
+
+El 13 de noviembre de 2015, se emite la \legalcite{ResIESS_CD501} que modifica los porcentajes de aportación, de 0,5\% constantes en la \legalcite{LeySS} y la \legalcite{ResIESS_CD261} (0,55\%), y pasa a 0,20\% por aportación patronal, a partir del mes de noviembre de 2015, 
+extendiéndose este aporte hasta el 31 de diciembre del año 2020. 
+
+El porcentaje de aportación personal para el Seguro General de Riesgos del Trabajo es 0,00\%; a excepción de los afiliados por inter-ciclos (industria azucarera) que cancelan el 0,40\% es decir de forma doble por la zafra e inter-zafra; y, de los trabajadores autónomos, sin relación de dependencia, voluntarios residentes en el Ecuador y en el exterior, pasantes becarios, internos rotativos que por su modalidad de trabajo su aporte del 0,20\% proviene del mismo afiliado.
+
+La referida norma es reformada por la \legalcite{ResIESS_CD516}, de 30 de marzo de 2016, que establece 
+que a partir del año 2021 en adelante el aporte personal es 0,00\% y el aporte patronal cambia al 
+0,38\%, a excepción de los afiliados por inter-ciclos (industria azucarera) que cancelan el 0,76\%. 
+
+Los trabajadores autónomos, sin relación de dependencia, los afiliados voluntarios residentes en el 
+Ecuador, pasantes, becarios, internos rotativos y afiliados voluntarios ecuatorianos residentes en 
+el exterior contribuyen con el aporte personal (0,20\% del sueldo a salario).
+
+%---------------------------------------------------------------------------------------------------
+\section{Resumen de prestaciones}
+\label{chp_res_ejec:res_pres}
+Conforme la Constitución de la República del Ecuador y la Ley de Seguridad Social, el Seguro General 
+de Riesgos del Trabajo protege al afiliado y al empleador, mediante programas de protección de los 
+riesgos derivados del trabajo, acciones de reparación de los daños derivados de accidente del 
+trabajo y enfermedades profesionales u ocupacionales, incluida la rehabilitación física, mental y la 
+reinserción laboral, concediendo las siguientes prestaciones básicas: 
+
+\begin{itemize}[itemsep=4mm, topsep=1pt]
+\item Servicios de prevención de riesgos laborales;
+\item Servicios médico-asistenciales, incluidos los servicios de prótesis y ortopedia a través del 
+Seguro General de Salud Individual y Familiar;
+\item Subsidio por incapacidad, cuando el riesgo ocasione impedimento temporal para trabajar; 
+\item Indemnización por pérdida de capacidad profesional o laboral, según la importancia de la 
+lesión cuando el riesgo ocasione incapacidad permanente parcial que no justifique el otorgamiento de
+una pensión de incapacidad laboral;
+\item Pensión de incapacidad laboral; y,
+\item Pensión de montepío, cuando el riesgo hubiese ocasionado el fallecimiento del afiliado.
+\end{itemize}
+
+%---------------------------------------------------------------------------------------------------
+\section{Hipótesis y supuestos claves del estudio}
+\label{chp_res_ejec:hipotesis}
+
+A manera de resumen, se describen las principales hipótesis de este estudio: 
+
+\begin{center}
+{\fontsize{11}{14}\selectfont
+%\begin{longtable}[H]{r*{5}{R{2.5cm}}}
+\begin{longtable}[H]{lc}
+\caption{Tasas utilizadas en el estudio (período 2021 a 2060)}
+\label{tab:iess_hip_macro_re} \\
+\toprule
+Ítem: & \multicolumn{1}{c}{Tasa}\\
+\midrule
+\endfirsthead
+
+\toprule
+Ítem: & \multicolumn{1}{c}{Tasa}\\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{2}{r}{continúa...} \\
+\endfoot
+
+%\bottomrule
+\caption*{\scriptsize Elaborado: DAIE}
+\endlastfoot
+
+\input{tablas/iess_hipotesis_macro.tex}
+
+\end{longtable}
+}
+\end{center}
+
+%---------------------------------------------------------------------------------------------------
+\section{Escenarios del estudio}
+\label{chp_res_ejec:escenarios}
+
+Para el análisis se han definido tres (3) escenarios: 
+\begin{enumerate}[itemsep=1mm, topsep=5pt]
+\item \textbf{Escenario Legal:} Constituye el escenario establecido de acuerdo con la Ley y Resoluciones vigentes, aplicando parámetros
+financieros conservadores y realistas, en base a valores proyectados promedio. En este escenario 
+se supone: tasa actuarial \Sexpr{REP$tasa_act_esc_1}\%, tasa de crecimiento salarial de \Sexpr{REP$tasa_sal_esc_1}\%
+y tasa de crecimiento de pensiones igual a \Sexpr{REP$tasa_pen_esc_1}\%. Además, supone que el aporte estatal
+promedio para los próximos años es igual a \Sexpr{REP$apo_est_esc_1}\% (el Estado alega que no existe base legal para su contribución del 40\% en las indemnizaciones por incapacidad permanente parcial y subsidios por incapacidad temporal) y toma en cuenta el cese del aporte del 2,76\% de los pensionistas.
+
+\item \textbf{Escenario Intermedio:} Constituye el escenario más probable, aplicando parámetros
+financieros conservadores y realistas, en base a valores proyectados promedio, utilizados en el Escenario Legal; pero supone que el aporte estatal promedio para los próximos años es igual a \Sexpr{REP$apo_est_esc_2}\% ( porcentaje aporte del Estado en 2020 ).
+
+\item \textbf{Escenario Pesimista:} Constituye el escenario en el cual el Estado cesa su aporte del 40\% de las pensiones, aplicando parámetros
+financieros conservadores y realistas, en base a valores proyectados utilizados en el Escenario Legal.
+
+\end{enumerate}
+%---------------------------------------------------------------------------------------------------
+\section{Principales resultados de las proyecciones actuariales}
+\label{chp_res_ejec:resultados}
+Del estudio actuarial se concluyen los siguientes resultados:
+\begin{table}[H]
+\centering
+\caption{Resultado de los escenarios de la valuación actuarial (2021 a 2060)}
+\label{tab:iess_resultados_resumen_ejec}
+{\fontsize{9}{11}\selectfont
+\begin{tabular}{lrrr}
+\toprule
+\multirow{1}{*}{Componente:} &  
+\multicolumn{1}{c}{\textbf{Escenario Legal}} &
+\multicolumn{1}{c}{\textbf{Escenario Intermedio}} &
+\multicolumn{1}{c}{\textbf{Escenario Pesimista}}\\
+\midrule
+\input{tablas/iess_resultados.tex}
+%\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{table}
+
+% --------------------------------------------------------------------------------------------------
+\section{Principales conclusiones y recomendaciones.}
+\label{chp_res_ejec:conclusiones}
+Entre las principales conclusiones, se tiene:
+\begin{enumerate}[itemsep=1mm, topsep=0pt]
+
+\item Bajo el escenario legal, el superávit actuarial alcanza USD \Sexpr{REP$bal_act_esc_1}, su prima
+suficiente que mantiene el equilibrio financiero en el tiempo es \Sexpr{REP$pri_med_niv_esc_1}\%,
+resultado que se obtiene con aporte del Estado del \Sexpr{REP$apo_est_esc_1}\%.
+
+\item Bajo el escenario intermedio, el superávit actuarial alcanza USD \Sexpr{REP$bal_act_esc_2}, su prima
+suficiente que mantiene el equilibrio financiero en el tiempo es \Sexpr{REP$pri_med_niv_esc_2}\%,
+resultado que se obtiene con aporte del Estado del \Sexpr{REP$apo_est_esc_2}\%.
+
+\item Bajo el escenario pesimista, el superávit actuarial alcanza USD \Sexpr{REP$bal_act_esc_3}, su prima
+suficiente que mantiene el equilibrio financiero en el tiempo es \Sexpr{REP$pri_med_niv_esc_3}\%,
+resultado que se obtiene con aporte del Estado del \Sexpr{REP$apo_est_esc_3}\%.
+
+\item No existe una adecuada metodología para registrar de accidentes laborales o enfermedades profesionales atendidas en las unidades médicas del IESS, es por ello, que no se pueda formar estadísticas de estos siniestros y tampoco se dispone de siniestralidad que sea la base de formación de tablas morbilidad pertenecientes a este Seguro.
+
+\end{enumerate}
+% --------------------------------------------------------------------------------------------------
+Sobre la base del análisis efectuado y los resultados obtenidos en el presente estudio, se emiten
+las siguientes recomendaciones, con la finalidad de que:
+
+\begin{enumerate}
+
+\item El Director General disponga al Seguro General de Salud Individual y Familiar, en coordinación con la Dirección del Seguro General de Riesgos del Trabajo tomen las medidas necesarias para que se registre adecuadamente en los sistemas de las atenciones médico-asistenciales del Seguro General de Riesgos del Trabajo por enfermedades profesionales y accidentes laborales.
+
+\item El Director General disponga a la Dirección Actuarial, de Investigación y Estadística la elaboración de un estudio actuarial que determine la prima suficiente de las atenciones médico-asistenciales del Seguro General de Riesgos del Trabajo; después que la Dirección del Seguro General de Riesgos del Trabajo haya identificado las atenciones médico-asistenciales de este seguro, mediante una metodología previamente aprobada por las autoridades del IESS.
+\end{enumerate}
+
+\section*{Responsabilidad actuarial}
+\label{chp_opinion:actuario}
+Del presente estudio es responsabilidad del Director Actuarial, de Investigación y Estadística.
+%\newpage
+\section{Firma de responsabilidad}
+Quito, 29 de enero de 2024 \\
+
+Atentamente,
+\vspace{3cm}
+%--------------------------------------------------------------------------------------------------
+% \begin{figure}[H]
+% 	\centering
+% 		\includegraphics[scale=0.28]{graficos/firma_actuario.png}
+% 	\end{figure}
+% \vspace{-2cm}
+\begin{center}
+\textbf{Ramiro Vega Suárez, Lic.} \\
+Director Actuarial, de Investigación y Estadística \\
+Instituto Ecuatoriano de Seguridad Social\\
+\textit{\small{Calificación Profesional Superintendencia de Bancos mediante Resolución No. SB-DTL-2018-799}}
+\end{center}

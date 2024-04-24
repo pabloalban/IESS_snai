@@ -1,0 +1,113 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Presentación de resultados}
+\label{chp_resultados}
+%---------------------------------------------------------------------------------------------------
+\section{Resultados de la valuación actuarial}
+\label{chp_valuacionactu:est_apo}
+La Dirección Actuarial, de Investigación y Estadística efectuó tres (3) escenarios para realizar las 
+proyecciones actuariales para el período de evaluación. Los resultados de los tres (3) escenarios del balance actuarial se encuentran descritos en la tabla \ref{tab:iess_bal_act_vap_escenario_1}.
+
+Del estudio actuarial, se concluyen los siguientes resultados:
+\begin{table}[H]
+\centering
+\caption{Resultado de los escenarios de la valuación actuarial (2021 a 2060)}
+\label{tab:iess_resultados_resumen_ejec}
+{\fontsize{9}{11}\selectfont
+\begin{tabular}{lrrr}
+\toprule
+\multirow{1}{*}{Componente:} &  
+\multicolumn{1}{c}{\textbf{Escenario Legal}} &
+\multicolumn{1}{c}{\textbf{Escenario Intermedio}} &
+\multicolumn{1}{c}{\textbf{Escenario Pesimista}} 
+\\
+\midrule
+\input{tablas/iess_resultados.tex}
+%\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{table}
+
+%---------------------------------------------------------------------------------------------------
+\section{Estimación del nivel óptimo de aportes}
+\label{chp_valuacionactu:est_apo}
+Mediante el análisis establecido en la sección \ref{chp_modelo:sis_fin}, considerando que el \Sexpr{REP_seg} tiene un sistema de financiamiento de reparto, para estimar el nivel óptimo de los aportes y obtener la prima media general se calcula a partir de los flujos de egresos por 
+beneficios ,$B_t$, y gastos administrativos ,$G_t$. Los flujos por ingresos debido al aporte estatal, $A^{est}_t$, e ingresos por aportes patronales ,$A^{2}_t$, el cual es el $0,38\%$ de la masa salarial de los afiliados activos ,$M_t$. Así, la prima media general para el horizonte $T$ se calcula de la siguiente forma:
+\begin{equation}
+\pi^2_T = \frac{ \sum\limits_{t=0}^T v^t \left( B_t + G_t - A^{est}_t - A^2_t \right) - \gamma \, V_{0} }{\sum\limits_{t=0}^T v^t M_t}
+\end{equation}
+
+Al determinar el valor de la prima suficiente, no se considera el importe de la reserva inicial del fondo; es decir, se establece $\gamma=0$, puesto que el patrimonio inicial se lo trata como un fondo de contingencia para casos excepcionales, tales como: pandemias o catástrofes naturales que pudieran originar el aparecimiento de nuevas enfermedades profesionales u ocupaciones y accidentes laborales fatales. Además, para el caso particular de este estudio actuarial, se ha utilizado el horizonte de estudio $T = \Sexpr{REP$hor}$.
+
+
+\section{Análisis de sensibilidad}
+\label{chp_valuacionactu:sensibilidad}
+
+Considerando el escenario Intermedio, el cual es el más probable, se realiza un análisis de sensibilidad, presentado a continuación:
+
+\begin{table}[H]
+\centering
+\caption{Análisis de sensibilidad}
+\label{tab:iess_prima_suficiente}
+{\fontsize{10}{13}\selectfont
+\begin{tabular}{lccccccr}
+\toprule
+ \multicolumn{1}{c}{\multirow{4}[2]{*}{Escenarios:}} &
+\multicolumn{1}{c}{Tasa} &
+\multicolumn{1}{c}{Crecimiento} &
+\multicolumn{1}{c}{Crecimiento} &
+\multicolumn{1}{c}{Crecimiento} &
+\multicolumn{1}{c}{Contribución} &
+\multicolumn{1}{c}{Prima} &
+\multicolumn{1}{c}{Superávit} \\
+&
+\multicolumn{1}{c}{Actuarial} &
+\multicolumn{1}{c}{Salarial} &
+\multicolumn{1}{c}{SBU} &
+\multicolumn{1}{c}{Pensiones} &
+\multicolumn{1}{c}{Estado} &
+\multicolumn{1}{c}{media} &
+\multicolumn{1}{c}{$V$} \\
+&
+\multicolumn{1}{c}{$i_a$} &
+\multicolumn{1}{c}{$i_r$} &
+\multicolumn{1}{c}{$i_{sbu}$} &
+\multicolumn{1}{c}{$i_p$} &
+\multicolumn{1}{c}{$\alpha_{est}$} &
+\multicolumn{1}{c}{nivelada} &
+\multicolumn{1}{c}{(USD)} \\
+&
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{$\pi^{2}_{T}$ (\%)} &
+\multicolumn{1}{c}{} \\
+\midrule
+
+\input{tablas/iess_tab_primas.tex}
+
+%\bottomrule
+\end{tabular}
+}
+\caption*{\scriptsize Elaborado: DAIE}
+\end{table}
+% %---------------------------------------------------------------------------------------------------
+% \section{Causas de posibles desfinanciamientos}
+% \label{chp_resultados:caus_desf}
+% 
+% Como se puede observar en la mayoría de los escenarios presentados en este capítulo, la 
+% contribución estatal para financiar las pensiones es cada vez es más grande, llegando incluso a 
+% superar los aportes totales; esta dependencia es cada vez más representativa conforme avanza el 
+% horizonte de proyección; por tanto, la ausencia de esta contribución, bajo este contexto llevará al 
+% desfinanciamiento del \Sexpr{REP_seg}.
+% 
+% El IESS debe encontrar mecanismos de financiamiento y ajustes necesarios para asegurar la 
+% sostenibilidad del \Sexpr{REP_seg} y mantener una moderada relación de dependencia entre los 
+% beneficios y el aporte estatal.
+% 
+% Otra posible causa de desfinanciamiento es no mantener niveles adecuados de rendimiento en 
+% inversiones del portafolio, el mismo que depende del comportamiento de la economía, la colocación y 
+% diversificación de las inversiones del portafolio. Los excedentes sobre el rendimiento esperado 
+% deben ser canalizados para mejorar y obtener beneficios solventes y capitalizar aún más la reserva.

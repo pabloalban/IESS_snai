@@ -1,0 +1,83 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Opinión actuarial}
+\label{chp_opinion}
+
+El estudio se realiza bajo la técnica actuarial, observando la normatividad emitida por la
+Superintendencia de Bancos, respecto de los estudios actuariales, así como las normas
+internacionales de presentación de estudios actuariales y convenios internacionales suscritos con la
+OIT.
+
+El estudio demuestra que al 31 de diciembre de 2020 el fondo de Riesgos de Trabajo es solvente con
+la prima y el esquema actual de entrega de prestaciones.
+
+%---------------------------------------------------------------------------------------------------
+\section{Calidad y suficiencia de los datos}
+\label{chp_opinion:calidad}
+
+Las fuentes de información demográficas utilizadas en este estudio son los registros institucionales
+analizados por esta Dirección, con suficientes niveles de confianza e integridad; y, las fuentes
+estadísticas oficiales nacionales.
+
+La Dirección Actuarial, de Investigación y Estadística validó mediante métodos estadísticos
+normalmente reconocidos la información de las bases demográficas tanto de aportantes al IESS, como
+de beneficiarios del Seguro General de Riesgos del Trabajo.
+
+En la formación de tablas biométricas y de mortalidad se consideró información histórica del
+comportamiento tanto: demográfico, siniestralidad, económico y financiero del fondo, observando este
+comportamiento durante los últimos ocho (8) años.
+
+En lo que se refiere al registro de accidentes laborales que causan lesiones no fatales, en
+comparación con los países de Latinoamérica, este seguro tiene un subregistro, lo que ocasiona que
+los gastos por atenciones médicas no sean registrados en su real valor.
+
+%---------------------------------------------------------------------------------------------------
+\section{Razonabilidad de las hipótesis}
+\label{chp_opinion:hipotesis}
+
+Las hipótesis que intervienen en el estudio se determinaron, basadas en el comportamiento histórico
+de la población, su crecimiento y registro de la siniestralidad; así como, de los fenómenos
+económicos y financieros.
+
+Los supuestos que se utilizaron en el estudio pretenden acercarse a la realidad demográfica,
+económica y financiera del país y en particular de los partícipes de este fondo.
+
+%---------------------------------------------------------------------------------------------------
+\section{Idoneidad de la metodología empleada}
+\label{chp_opinion:metodologia}
+
+La metodología utilizada para la elaboración de esta valuación actuarial está explicada en el
+capítulo \ref{chp_modelo}; y cumple con las especificaciones y disposiciones de la Superintendencia
+de Bancos y las normas generalmente aceptadas en la elaboración de estudios actuariales de
+asociaciones internacionales como la OIT y las asociaciones de actuarios.
+
+%---------------------------------------------------------------------------------------------------
+\section{Fecha de valuación}
+
+\begin{itemize}
+  \item La información de base para este estudio fue cortada al 2020-12-31. 
+  \item El período de proyección de este estudio es de 40 años, del 2020-12-31 al 2060-12-31.
+\end{itemize}
+
+%---------------------------------------------------------------------------------------------------
+\section{Responsabilidad actuarial}
+\label{chp_opinion:actuario}
+Del presente estudio es responsabilidad del Director Actuarial, de Investigación y Estadística.
+
+\section{Firma de responsabilidad}
+Quito, 29 de enero de 2024 \\
+
+%\vspace{2cm}
+Atentamente,
+\vspace{4cm}
+%--------------------------------------------------------------------------------------------------
+% \begin{figure}[H]
+% 	\centering
+% 		\includegraphics[scale=0.28]{graficos/firma_actuario.pdf}
+% 	\end{figure}
+%\vspace{-2cm}
+\begin{center}
+\textbf{Ramiro Vega Suárez, Lic.} \\
+Director Actuarial, de Investigación y Estadística \\
+Instituto Ecuatoriano de Seguridad Social\\
+\textit{\small{Calificación Profesional Superintendencia de Bancos mediante Resolución No. SB-DTL-2018-799}}
+\end{center}
