@@ -33,7 +33,7 @@ REP$bib_lib <- 'bibliografia_libros.bib'
 REP$bib_art <- 'bibliografia_articulos.bib'
 REP$bib_ley <- 'bibliografia_leyes.bib'
 
-REP$tit <- 'Estudio para determinar la base presuntiva de aportación del trabajador autónomo reciclador de base'
+REP$tit <- 'Estudio Actuarial para la jubilación especial de los agentes del Servicio Penitenciario Activo del Ecuador '
 REP$nom_seg <- 'Seguro de Invalidez, Vejez y Muerte'
 REP$seg <- switch( parametros$seguro,
                    'ivm' = 'Seguro IVM',

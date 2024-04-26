@@ -45,8 +45,8 @@
 % <<cap06, child='06_analisis_contexto.Rnw'>>=
 % @
 %  
-%<<cap07, child='07_demografia.Rnw'>>=
-%@
+<<cap07, child='07_demografia.Rnw'>>=
+@
 %  
 % <<cap08, child='08_inversiones.Rnw'>>=
 % @
