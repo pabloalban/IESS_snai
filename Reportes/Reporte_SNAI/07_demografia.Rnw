@@ -3,67 +3,40 @@
 \label{chp_demog}
 
 %Tabla de reclicladores por edad y sexo-------------------------------------------------------------
-La tabla \ref{tab:iess_snai_edad_sexo} presenta el número de Servidores Penitenciarios Activos del Ecuador (SNAI) según edad y sexo, observándose el mayor número en el sexo femenino, específicamente a los 27 años de edad.
+La tabla \ref{tab:iess_snai_rang_edad_sexo} presenta el número de Servidores Penitenciarios Activos del Ecuador (SNAI) según edad y sexo, observándose el mayor número en el sexo femenino, específicamente a los 27 años de edad.
 
 {\fontsize{9}{13}\selectfont
-\begin{longtable}[H]{lrrr}
+\begin{longtable}[H]{lrrrrrr}
 \caption{Distribución de servidores por edad y sexo}
-\label{tab:iess_snai_edad_sexo}\\
+\label{tab:iess_snai_rang_edad_sexo}\\
 \toprule
 \multicolumn{1}{c}{Edad} &
 \multicolumn{1}{c}{Femenino} & 
+\multicolumn{1}{c}{Porcentaje (\%)} & 
 \multicolumn{1}{c}{Masculino} &
-\multicolumn{1}{c}{Total}\\
+\multicolumn{1}{c}{Porcentaje (\%)} & 
+\multicolumn{1}{c}{Total} &
+\multicolumn{1}{c}{Porcentaje (\%)} \\
 \midrule
 \endfirsthead
 
 \toprule
 \multicolumn{1}{c}{Edad} &
 \multicolumn{1}{c}{Femenino} & 
+\multicolumn{1}{c}{Porcentaje (\%)} & 
 \multicolumn{1}{c}{Masculino} &
-\multicolumn{1}{c}{Total}\\
+\multicolumn{1}{c}{Porcentaje (\%)} & 
+\multicolumn{1}{c}{Total} &
+\multicolumn{1}{c}{Porcentaje (\%)} \\
 \midrule
 \endhead
 
-\bottomrule \multicolumn{4}{r}{continúa...}\\
+\bottomrule \multicolumn{7}{r}{continúa...}\\
 \endfoot
 \caption*{\scriptsize Fuente:ASOSERPEN.
 \\Elaborado: DAIE}
 \endlastfoot
-  \input{tablas/iess_snai_edad_sexo.tex}
-\end{longtable}
-}
-
-%Tabla de porcentaje de servidores por edad y sexo------------------------------------------------
-
-En la siguiente tabla \ref{tab:iess_snai_porc_edad_sexo}, se evidencia que, se evidencia que el 3,11\% del total de servidoras son mujeres de 27 años, seguido por un 2,69\% del grupo de 28 años. En cuanto a los hombres, los porcentajes más altos son del 5,66\% y el 5,48\%, respectivamente, dentro de la misma franja de edades.
-
-{\fontsize{9}{13}\selectfont
-\begin{longtable}[H]{lrrr}
-\caption{Porcentaje de servidores Base por rangos de edad y sexo}
-\label{tab:iess_snai_porc_edad_sexo}\\
-\toprule
-\multicolumn{1}{c}{Edad} &
-\multicolumn{1}{c}{Femenino (\%)} & 
-\multicolumn{1}{c}{Masculino (\%)} &
-\multicolumn{1}{c}{Total (\%)} \\
-\midrule
-\endfirsthead
-
-\toprule
-\multicolumn{1}{c}{Edad} &
-\multicolumn{1}{c}{Femenino (\%)} & 
-\multicolumn{1}{c}{Masculino (\%)} &
-\multicolumn{1}{c}{Total (\%)}\\
-\midrule
-\endhead
-
-\bottomrule \multicolumn{4}{r}{continúa...}\\
-\endfoot
-\caption*{\scriptsize Fuente: ASOSERPEN.
-\\Elaborado: DAIE}
-\endlastfoot
-  \input{tablas/iess_snai_porc_edad_sexo.tex}
+  \input{tablas/iess_snai_rang_edad_sexo.tex}
 \end{longtable}
 }
 
@@ -180,41 +153,4 @@ La figura \ref{fig:IESS_snai_pir_prov_sexo} muestra que la mayoría de servidore
 \end{figure}
 
 
-%Tabla de salarios por edad y sexo-----------------------------------------------------
-A continuación, se presenta en la tabla \ref{tab:iess_snai_edad_sal} los salarios de los Servidores Penitenciarios Activos, clasificada por edad y género.
-
-{\fontsize{9}{13}\selectfont
-\begin{longtable}[H]{lrrrrrr}
-\caption{Salario por edad y sexo}
-\label{tab:iess_snai_edad_sal}\\
-\toprule
-\multicolumn{1}{c}{Edad} &
-\multicolumn{1}{c}{Femenino } & 
-\multicolumn{1}{c}{Porcentaje (\%)} & 
-\multicolumn{1}{c}{Masculino} &
-\multicolumn{1}{c}{Porcentaje (\%)} &
-\multicolumn{1}{c}{Total}&
-\multicolumn{1}{c}{Porcentaje (\%)}\\
-\midrule
-\endfirsthead
-
-\toprule
-\multicolumn{1}{c}{Edad} &
-\multicolumn{1}{c}{Femenino } & 
-\multicolumn{1}{c}{Porcentaje (\%)} & 
-\multicolumn{1}{c}{Masculino} &
-\multicolumn{1}{c}{Porcentaje (\%)} &
-\multicolumn{1}{c}{Total}&
-\multicolumn{1}{c}{Porcentaje (\%)}\\
-\midrule
-\endhead
-
-\bottomrule \multicolumn{7}{r}{continúa...}\\
-\endfoot
-\caption*{\scriptsize Fuente: ASOSERPEN.
-\\Elaborado: DAIE}
-\endlastfoot
-  \input{tablas/iess_snai_edad_sal.tex}
-\end{longtable}
-}
 

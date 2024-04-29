@@ -1,5 +1,5 @@
 message( paste( rep( '-', 100 ), collapse = '' ) )
-message( '\tGraficando demografía del SGRT' )
+message( '\tGraficando demografía de SNAI' )
 
 # Plantilla gráfica --------------------------------------------------------------------------------
 source( 'R/401_graf_plantilla.R', encoding = 'UTF-8', echo = FALSE )
@@ -18,10 +18,10 @@ aux <- pir_porc_edad_sexo %>%
   arrange( sexo, x )
 
 salto_x <- 0.5
-salto_y <- 1
+salto_y <- 5
 brks_x <- seq( -69, 69, salto_y )
 brks_y <- seq( -6, 6, salto_x )
-lbls_y <- paste0( as.character( c( seq( 6, 0, -salto_x ), seq( salto_x, 6, salto_x ) ) ), '%')
+lbls_y <- paste0( as.character( format(c( seq( 6, 0, -salto_x ), seq( salto_x, 6, salto_x ) ), decimal.mark = ',')), '%')
 
 snai_pir_porc_edad_sexo <- ggplot( aux, aes( x = x, y = porcentaje, fill = sexo ) ) +
   xlab( 'Edad' ) +
@@ -60,7 +60,7 @@ aux <- pir_grado_sexo %>%
 
 salto_x <- 5
 brks_y <- seq( -50, 50, salto_x )
-lbls_y <- paste0( as.character( c( seq( 50, 0, -salto_x ), seq( salto_x, 50, salto_x ) ) ), '%')
+lbls_y <- paste0( as.character( format(c( seq( 50, 0, -salto_x ), seq( salto_x, 50, salto_x ) ), decimal.mark = ',')), '%')
 
 snai_pir_grado_sexo <- ggplot( aux, aes( x = denominacion_puesto_unificado, y = porcentaje, fill = sexo ) ) +
   xlab( 'Grado' ) +
@@ -96,9 +96,9 @@ aux <- pir_prov_sexo %>%
                                 porcentaje ) ) %>%
   arrange( sexo, provincia )
 
-salto_x <- 1
+salto_x <- 3
 brks_y <- seq( -30, 30, salto_x )
-lbls_y <- paste0( as.character( c( seq( 30, 0, -salto_x ), seq( salto_x, 30, salto_x ) ) ), '%')
+lbls_y <- paste0( as.character( format(c( seq( 30, 0, -salto_x ), seq( salto_x, 30, salto_x ) ), decimal.mark = ',')), '%')
 
 snai_pir_prov_sexo <- ggplot( aux, aes( x = provincia, y = porcentaje, fill = sexo ) ) +
   xlab( 'Provincia' ) +
@@ -135,10 +135,10 @@ aux <- pir_edad_sal %>%
   arrange( sexo, x )
 
 salto_x <- 0.5
-salto_y <- 1
+salto_y <- 5
 brks_x <- seq( -69, 69, salto_y )
 brks_y <- seq( -6, 6, salto_x )
-lbls_y <- paste0( as.character( c( seq( 6, 0, -salto_x ), seq( salto_x, 6, salto_x ) ) ), '%')
+lbls_y <- paste0( as.character( format(c( seq( 6, 0, -salto_x ), seq( salto_x, 6, salto_x ) ), decimal.mark = ',')), '%')
 
 snai_pir_edad_sal <- ggplot( aux, aes( x = x, y = porcentaje, fill = sexo ) ) +
   xlab( 'Edad' ) +

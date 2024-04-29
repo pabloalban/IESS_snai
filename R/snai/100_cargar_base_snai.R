@@ -29,7 +29,6 @@ sal_snai <- read_excel(
   skip = 0
 ) %>% clean_names(  )
 
-
 #Arreglo de cédulas---------------------------------------------------------------------------------
 
 snai <- snai %>% 
@@ -50,6 +49,10 @@ snai <- snai %>%
   lazy_dt( ) %>% 
   left_join( ., sal_snai, by = 'denominacion_puesto_unificado' ) %>% 
   as_tibble( )
+
+#Transformando a minúsculas las letras de 
+snai$provincia <- str_to_title(snai$provincia)
+snai$denominacion_puesto_unificado <- str_to_title(snai$denominacion_puesto_unificado)
 
 #Guardando en un Rdata------------------------------------------------------------------------------
 message( '\tGuardando base de agentes snai' )

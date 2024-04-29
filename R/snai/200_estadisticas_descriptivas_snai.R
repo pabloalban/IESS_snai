@@ -5,28 +5,42 @@ load( paste0( parametros$RData, "IESS_agentes_snai.RData" ) )
 
 #Estadísticas descriptivas--------------------------------------------------------------------------
 
-#Número de servidores por edad y sexo-------------------------------------------------------------
+#Rango de Número de servidores por edad y sexo---------------------------------------------------- 
 
-edad_sexo <- snai %>%
-  group_by( sexo, x ) %>% 
-  mutate( servidores = n( ) ) %>% 
-  ungroup( sexo, x ) %>% 
-  distinct( sexo, x, .keep_all = TRUE ) %>% 
-  dplyr::select( sexo, x, servidores ) %>% 
-  pivot_wider( ., names_from = sexo, values_from = servidores, values_fill = 0) %>% 
-  arrange( x ) %>% 
-  mutate( total = M + F,
-          x = as.character( x ) ) %>% 
-  rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) ) %>% 
-  mutate_at(  c( 2:ncol( . ) ), as.numeric ) 
+cortes_x <- c(20, 30, 40, 50, 60, Inf)
 
-#Porcentaje de servidores por edad y sexo---------------------------------------------------------
+etiquetas_x <- c(paste0("(\ ", formatC(cortes_x[1:4],
+                                            digits = 0, format = 'f', big.mark = '.', decimal.mark = ','),
+                            "-", formatC(cortes_x[2:5],
+                                            digits = 0, format = 'f', big.mark = '.', decimal.mark = ','), "]"), 
+                     "Mayor a 60") 
 
-porc_edad_sexo <- edad_sexo %>%
-  mutate(porcentaje_mujeres = F * 100 / total[50],
-         porcentaje_hombres = M * 100 / total[50],
-         porcentaje_total = total * 100 / total[50] ) %>%
-  dplyr::select( x, porcentaje_mujeres, porcentaje_hombres, porcentaje_total )
+rang_edad_sexo <- snai %>%
+  mutate(  rango_x = cut(  x, 
+                           breaks = cortes_x,
+                           labels = etiquetas_x,
+                           include.lowest = TRUE,
+                           right = TRUE ) ) %>%
+  group_by(  rango_x, sexo ) %>%
+  mutate(  servidores = n( )  ) %>%
+  ungroup(   ) %>%
+  distinct(  sexo, rango_x, .keep_all = TRUE  ) %>%
+  dplyr::select(  sexo,
+                  rango_x,
+                  servidores ) %>%
+  arrange(  sexo, rango_x  ) %>%
+  spread(   ., sexo, value = c(  servidores  ),  sep = "_"  )  %>%
+  mutate_if(  is.numeric , replace_na, replace = 0 ) %>%
+  mutate(  total = rowSums( .[2:ncol( . )] )  ) %>%
+  mutate(  rango_x = as.character(  rango_x  )  ) %>%
+  rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) )  %>%
+  mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
+  mutate(  porc_mujer = 100 * sexo_F / total[6] , 
+           porc_hombre = 100* sexo_M / total[6] , 
+           porc_total = 100 * total / total[6] ) %>%
+  dplyr::select(  rango_x, sexo_F, porc_mujer, 
+                  sexo_M, porc_hombre, total, porc_total ) %>%
+  distinct(  ., rango_x, .keep_all = TRUE  )
 
 #Número de servidores por puesto unificado y sexo------------------------------------------------------
 
@@ -135,14 +149,13 @@ pir_edad_sal <- snai %>%
 #Guardar en Rdatas----------------------------------------------------------------------------------
 message( "\tGuardando Rdatas" )
 save(  edad_sal,
-       edad_sexo,
        grado_sexo,
        pir_edad_sal,
        pir_grado_sexo,
        pir_porc_edad_sexo,
        pir_prov_sexo,
-       porc_edad_sexo,
        prov_sexo,
+       rang_edad_sexo,
        file = paste0(  parametros$RData, 'IESS_SNAI_tablas_demografia.RData'  )  )
 
 #Limpiar Ram----------------------------------------------------------------------------------------

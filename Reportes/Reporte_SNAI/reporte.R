@@ -45,7 +45,7 @@ REP$seg <- switch( parametros$seguro,
 REP_seg <- 'Seguro General de Riesgos del Trabajo'
 
 paste( 'Seguro', parametros$seguro )
-REP$fec_fin <- format( parametros$rtr_fec_fin, '%Y-%m-%d' )
+REP$fec_fin <- format( ymd( '2022-12-31' ), '%Y-%m-%d' )
 REP$fec_val <- format( ymd( '2024-01-29' ), '%Y-%m-%d' )
 REP$watermark <- paste0( 'Borrador ', parametros$fec_eje, ' ', format( Sys.time(), '%H:%M:%S' ) )
 REP$version <- digest( paste0( 'IESSDAIE', format( Sys.time(), '%Y%m%d%H' ) ), algo = 'sha256', file = FALSE )
