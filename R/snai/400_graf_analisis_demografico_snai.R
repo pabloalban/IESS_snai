@@ -17,7 +17,7 @@ aux <- pir_porc_edad_sexo %>%
                          porcentaje ) ) %>%
   arrange( sexo, x )
 
-salto_x <- 0.5
+salto_x <- 1
 salto_y <- 5
 brks_x <- seq( -69, 69, salto_y )
 brks_y <- seq( -6, 6, salto_x )
@@ -71,7 +71,7 @@ snai_pir_grado_sexo <- ggplot( aux, aes( x = denominacion_puesto_unificado, y = 
   coord_flip( ) +
   theme_bw( ) +
   plt_theme +
-  theme( axis.text.x = element_text( angle = 90, hjust = 0.5, vjust=0.5 ) ) +
+  theme( axis.text.x = element_text( angle = 60, hjust = 0.5, vjust=0.5 ) ) +
   guides( fill = guide_legend( title = NULL,
                                label.position = 'right', 
                                label.hjust = 0, 
@@ -109,7 +109,7 @@ snai_pir_prov_sexo <- ggplot( aux, aes( x = provincia, y = porcentaje, fill = se
   coord_flip( ) +
   theme_bw( ) +
   plt_theme +
-  theme( axis.text.x = element_text( angle = 90, hjust = 0.5, vjust=0.5 ) ) +
+  theme( axis.text.x = element_text( angle = 0, hjust = 0.5, vjust=0.5 ) ) +
   guides( fill = guide_legend( title = NULL,
                                label.position = 'right', 
                                label.hjust = 0, 
@@ -128,7 +128,7 @@ ggsave( plot = snai_pir_prov_sexo,
 #Pirámide de salario según edad y sexo-------------------------------------------------
 
 message( '\tGraficando salario según edad y sexo' )
-aux <- pir_edad_sal %>%
+aux <- pir_edad_sal_prom %>%
   mutate( porcentaje = if_else( sexo == 'F',
                                 -porcentaje,
                                 porcentaje ) ) %>%
@@ -140,7 +140,7 @@ brks_x <- seq( -69, 69, salto_y )
 brks_y <- seq( -6, 6, salto_x )
 lbls_y <- paste0( as.character( format(c( seq( 6, 0, -salto_x ), seq( salto_x, 6, salto_x ) ), decimal.mark = ',')), '%')
 
-snai_pir_edad_sal <- ggplot( aux, aes( x = x, y = porcentaje, fill = sexo ) ) +
+snai_pir_edad_sal_prom <- ggplot( aux, aes( x = x, y = porcentaje, fill = sexo ) ) +
   xlab( 'Edad' ) +
   geom_bar( data = aux %>% filter( sexo == 'F' ), stat = 'identity', colour = 'white') +
   geom_bar( data = aux %>% filter( sexo == 'M' ), stat = 'identity', colour = 'white') +
@@ -158,8 +158,8 @@ snai_pir_edad_sal <- ggplot( aux, aes( x = x, y = porcentaje, fill = sexo ) ) +
   scale_fill_manual( values = c( parametros$iess_green, parametros$iess_blue ),
                      labels = c( 'Mujeres', 'Hombres' ) )
 
-ggsave( plot = snai_pir_edad_sal, 
-        filename = paste0( parametros$resultado_graficos, 'IESS_snai_pir_edad_sal',
+ggsave( plot = snai_pir_edad_sal_prom, 
+        filename = paste0( parametros$resultado_graficos, 'IESS_snai_pir_edad_sal_prom',
                            parametros$graf_ext ),
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 

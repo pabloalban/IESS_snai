@@ -3,7 +3,8 @@
 \label{chp_demog}
 
 %Tabla de reclicladores por edad y sexo-------------------------------------------------------------
-La tabla \ref{tab:iess_snai_rang_edad_sexo} presenta el número de Servidores Penitenciarios Activos del Ecuador (SNAI) según edad y sexo, observándose el mayor número en el sexo femenino, específicamente a los 27 años de edad.
+
+La Tabla \ref{tab:iess_snai_rang_edad_sexo} muestra la distribución por edad y sexo de los Servidores Penitenciarios Activos del Ecuador (SNAI), destacando que el mayor porcentaje se concentra en el rango de edad de 25 a 30 años, representando el 38,01\% del total, siendo el 24,43\% de este grupo del sexo masculino y 13,58\% del sexo femenino.
 
 {\fontsize{9}{13}\selectfont
 \begin{longtable}[H]{lrrrrrr}
@@ -40,7 +41,7 @@ La tabla \ref{tab:iess_snai_rang_edad_sexo} presenta el número de Servidores Pe
 \end{longtable}
 }
 
-En la figura \ref{fig:IESS_snai_pir_porc_edad_sexo}, se presenta la distribución de la población de servidores base por edad y sexo.
+En la figura \ref{fig:IESS_snai_pir_porc_edad_sexo}, se presenta la distribución de la población de servidores por edad y sexo.
 
 \begin{figure}[H]
   \caption{Distribución por edad y sexo de la población de servidores}
@@ -51,9 +52,87 @@ En la figura \ref{fig:IESS_snai_pir_porc_edad_sexo}, se presenta la distribució
     \textbf{Elaborado:} DAIE.}
 \end{figure}
 
+%Tabla de salarios por grado --------------------------------------------------------------
+
+La tabla \ref{tab:iess_sal_snai}, indica los salarios de los servidores según su grado.
+
+{\fontsize{9}{13}\selectfont
+\begin{longtable}[H]{lr}
+\caption{Distribución de servidores por grado y sexo}
+\label{tab:iess_sal_snai}\\
+\toprule
+\multicolumn{1}{c}{Grado} &
+\multicolumn{1}{c}{Salario (USD)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Grado} &
+\multicolumn{1}{c}{Salario (USD)}\\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{2}{r}{continúa...}\\
+\endfoot
+\caption*{\scriptsize Fuente: ASOSERPEN.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_sal_snai.tex}
+\end{longtable}
+}
+
+
+La siguiente tabla \ref{tab:iess_snai_rang_edad_sal_prom}, presenta el salario promedio según el rango de edad. Se evidencia que los servidores que se encuentran dentro del rango de edad de 50 a 55 años perciben los sueldos más altos en promedio, tanto en hombres como en mujeres.
+
+{\fontsize{9}{13}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+\caption{Salario Promedio por Grupo de Edad}
+\label{tab:iess_snai_rang_edad_sal_prom}\\
+\toprule
+\multicolumn{1}{c}{Edad} &
+\multicolumn{1}{c}{Femenino } & 
+\multicolumn{1}{c}{Porcentaje (\%)} & 
+\multicolumn{1}{c}{Masculino} &
+\multicolumn{1}{c}{Porcentaje (\%)} &
+\multicolumn{1}{c}{Total} &
+\multicolumn{1}{c}{Porcentaje (\%)}\\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Edad} &
+\multicolumn{1}{c}{Femenino } & 
+\multicolumn{1}{c}{Porcentaje (\%)} & 
+\multicolumn{1}{c}{Masculino} &
+\multicolumn{1}{c}{Porcentaje (\%)} &
+\multicolumn{1}{c}{Total}&
+\multicolumn{1}{c}{Porcentaje (\%)}\\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{r}{continúa...}\\
+\endfoot
+\caption*{\scriptsize Fuente: ASOSERPEN.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_snai_rang_edad_sal_prom.tex}
+\end{longtable}
+}
+
+En la Figura \ref{fig:IESS_snai_pir_edad_sal_prom} se aprecia una tendencia uniforme que muestra un incremento proporcional al aumento de la edad.
+
+\begin{figure}[H]
+  \caption{Salario Promedio según edad}
+  \label{fig:IESS_snai_pir_edad_sal_prom}
+  \centering
+  \includegraphics[ scale = 0.8 ]{graficos/IESS_snai_pir_edad_sal_prom.pdf}
+  \caption*{\scriptsize \textbf{Fuente:}  ASOSERPEN. \\
+    \textbf{Elaborado:} DAIE.}
+\end{figure}
+
 
 %Tabla de servidores por grado y sexo------------------------------------------------------
-A continuación, se indica el número de servidores según grado y sexo en la tabla \ref{tab:iess_snai_grado_sexo}.
+A continuación, se expone el número de servidores según grado y sexo en la tabla \ref{tab:iess_snai_grado_sexo}.
 
 {\fontsize{9}{13}\selectfont
 \begin{longtable}[H]{lrrrrrr}
@@ -89,7 +168,8 @@ A continuación, se indica el número de servidores según grado y sexo en la ta
   \input{tablas/iess_snai_grado_sexo.tex}
 \end{longtable}
 }
-Se observa que la mayoría de los servidores son Agentes de Seguridad Penitenciaria 3°, con un porcentaje del 70,01\%. De este total, el 23,06\% corresponde a mujeres y el 46,96\% a hombres.
+
+Se observa que la mayoría de los servidores tienen grado de Agentes de Seguridad Penitenciaria 3°, con un porcentaje del 70,01\%. De este total, el 23,06\% corresponde a mujeres y el 46,96\% a hombres.
 
 En la figura \ref{fig:IESS_snai_pir_grado_sexo}, se ilustra la distribución de la población de servidores según su grado y sexo.
 
@@ -141,7 +221,7 @@ En la Tabla \ref{tab:iess_snai_prov_sexo}, se detalla la cantidad de servidores 
 \end{longtable}
 }
 
-La figura \ref{fig:IESS_snai_pir_prov_sexo} muestra que la mayoría de servidores están en Guayas, donde el 10,57\% son mujeres y el 25,78\% son hombres.
+La figura \ref{fig:IESS_snai_pir_prov_sexo} muestra que la mayoría de servidores se encuentran en Guayas, donde el 10,57\% son mujeres y el 25,78\% son hombres. La segunda provincia con mayor número de  Servidores Penitenciarios Activos es Cotopaxi, representando el 9,19\% del total.
 
 \begin{figure}[H]
   \caption{Distribución por provincia y sexo de la población de servidores}

@@ -75,20 +75,37 @@ print( aux_xtab,
        sanitize.text.function = identity )
 
 
-#Tabla de salarios por edad y sexo-----------------------------------------------------
+#Tabla de salario por grado-----------------------------------------------------------------------
 
-message( '\tTabla de salarios por edad y sexo' )
-aux <- edad_sal %>%
-  mutate( F = as.integer(F), 
-          M = as.integer(M),
-          total = as.integer(total) )
+message( '\tTabla de salarios por grado' )
 
+aux <- sal_snai
+aux_xtab <- xtable( aux, digits = c( 0, 0, 2 ) )
+
+aux_xtab <- tildes_a_latex( aux_xtab )
+
+print( aux_xtab,
+       file = paste0( parametros$resultado_tablas, 'iess_sal_snai', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE, 
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = c(nrow(aux)),
+       sanitize.text.function = identity )
+
+
+#Tabla de salario promedio por edad y sexo--------------------------------------------------------
+
+message( '\tTabla de salarios promedio por edad y sexo' )
+
+aux <- rang_edad_sal_prom
 aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2, 2, 2, 2, 2 ) )
 
 aux_xtab <- tildes_a_latex( aux_xtab )
 
 print( aux_xtab,
-       file = paste0( parametros$resultado_tablas, 'iess_snai_edad_sal', '.tex' ),
+       file = paste0( parametros$resultado_tablas, 'iess_snai_rang_edad_sal_prom', '.tex' ),
        type = 'latex',
        include.colnames = FALSE, 
        include.rownames = FALSE,

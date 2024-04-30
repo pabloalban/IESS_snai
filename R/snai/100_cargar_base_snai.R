@@ -20,14 +20,6 @@ snai <- read_excel(
   skip = 0
 ) %>% clean_names(  )
 
-sal_snai <- read_excel(
-  file, 
-  sheet = 'Hoja2',
-  col_names = TRUE,
-  col_types = NULL,
-  na = "",
-  skip = 0
-) %>% clean_names(  )
 
 #Arreglo de cédulas---------------------------------------------------------------------------------
 
@@ -50,9 +42,10 @@ snai <- snai %>%
   left_join( ., sal_snai, by = 'denominacion_puesto_unificado' ) %>% 
   as_tibble( )
 
-#Transformando a minúsculas las letras de 
-snai$provincia <- str_to_title(snai$provincia)
-snai$denominacion_puesto_unificado <- str_to_title(snai$denominacion_puesto_unificado)
+#Transformando a minúsculas las letras 
+snai$provincia <- str_to_title( snai$provincia )
+snai$denominacion_puesto_unificado <- str_to_title( snai$denominacion_puesto_unificado )
+sal_snai$denominacion_puesto_unificado <- str_to_title( sal_snai$denominacion_puesto_unificado )
 
 #Guardando en un Rdata------------------------------------------------------------------------------
 message( '\tGuardando base de agentes snai' )
@@ -65,6 +58,6 @@ save( snai,
 )
 
 #Borrando data.frames-------------------------------------------------------------------------------
-message( paste( rep( '-', 100 ), collapse = '' ) )
-rm( list = ls(  )[!( ls(  ) %in% 'parametros' )] )
-gc(  )
+#message( paste( rep( '-', 100 ), collapse = '' ) )
+#rm( list = ls(  )[!( ls(  ) %in% 'parametros' )] )
+#gc(  )
