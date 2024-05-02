@@ -37,6 +37,15 @@ snai <- snai %>%
   as_tibble( ) %>% 
   mutate( x = as.integer( round( difftime( as.Date("2024-02-23"), fecha_nacimiento, units = "days") / 365.25, 0 ) ) )
 
+sal_snai <- read_excel(
+  file, 
+  sheet = 'Hoja2',
+  col_names = TRUE,
+  col_types = NULL,
+  na = "",
+  skip = 0
+) %>% clean_names(  )
+
 snai <- snai %>% 
   lazy_dt( ) %>% 
   left_join( ., sal_snai, by = 'denominacion_puesto_unificado' ) %>% 

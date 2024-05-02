@@ -83,21 +83,6 @@ prov_sexo <- snai %>%
          porc = total * 100 / total[21]) %>%
   dplyr::select( provincia, F, porcentaje_mujeres, M, porcentaje_hombres, total, porc)
 
-#Salario por grado------------------------------------------------------------------------------
-file <-
-  paste0( parametros$Data,
-          'SERVIDORES CSVP.xlsx' )
-sal_snai <- read_excel(
-  file, 
-  sheet = 'Hoja2',
-  col_names = TRUE,
-  col_types = NULL,
-  na = "",
-  skip = 0
-) %>% clean_names(  )
-
-sal_snai$denominacion_puesto_unificado <- str_to_title( sal_snai$denominacion_puesto_unificado )
-
 
 #Salario por rango edad y sexo------------------------------------------------------------------ 
 
@@ -174,7 +159,8 @@ pir_edad_sal_prom <- snai %>%
 
 #Guardar en Rdatas-----------------------------------------------------------------------------
 message( "\tGuardando Rdatas" )
-save(  grado_sexo,
+save(  
+  grado_sexo,
        pir_edad_sal_prom,
        pir_grado_sexo,
        pir_porc_edad_sexo,
